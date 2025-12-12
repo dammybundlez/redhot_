@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <script src="https://kit.fontawesome.com/c4993cb090.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-zinc-900">
+    <header class="px-10 fixed w-full top-8 left-0 z-50 blur-xs font-poppins">
+        <div class="backdrop-blur-md flex justify-between items-center bg-zinc-900/90 px-4 shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.10)] shadow-lg rounded-lg outline outline-1 outline-offset-[-1px] outline-orange-300/10">
+            <div>
+                <div class="flex items-center gap-2">
+                    <a href="index.html">
+                        <img src="/public/img124.png" class="w-16 h-auto object-cover">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <button id="menuBtn" class="md:hidden text-white text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+    
+                <nav class="hidden md:flex text-sm">
+                    <ul class="flex items-center text-white gap-10 uppercase">
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="films.html">Films</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="news.html">News</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="legacy.html">30 Years legacy</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="">Others <span class="text-sm pl-2"><i class="fa-solid fa-chevron-down"></i></span></a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="about.html">About</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-zinc-900/90 border-t border-orange-300/10 rounded-b-xl
+                            shadow-lg transition-all duration-400 overflow-hidden">
+            <ul class="flex flex-col text-white gap-6 uppercase p-6">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="legacy.html">30 Years legacy</a></li>
+                <li><a href="#">Others <span class="text-sm"><i class="fa-solid fa-chevron-down"></i></span></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header> 
+    <!-- HERO SECTION -->
+    <div class="relative mt-20">
+        <img class="h-[60vh] md:h-[750px] w-full object-cover brightness-75" src="/public/bloghero.png" alt="">
+
+        <!-- Overlay Text -->
+        <div class="absolute bottom-10 left-6 md:left-10 flex flex-col gap-4">
+            <h1 class="text-orange-300 text-5xl md:text-7xl lg:text-[85px] font-bebas_neus max-w-xl leading-tight">Omotola and Family.</h1>
+            <p class="text-neutral-200 text-base md:text-lg font-poppins">8th Dec 2025</p>
+
+            <div>
+                <a href="" class="bg-orange-300 text-white text-lg font-poppins px-6 py-3 inline-block">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="px-6 md:px-10 py-10 mt-10 space-y-16">
+
+        <!-- All News Title -->
+        <h2 class="text-orange-300 text-5xl md:text-6xl font-bebas_neus text-center">All News</h2>
+
+        <!-- NEWS GRID -->
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <!-- CARD 1 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news1.png" />
+                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins">AN ICON’S JOURNEY TO INDIE FILM</h3>
+                <p class="text-white text-base md:text-lg font-poppins">Black Film Wire Press Release – MAY 2025</p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news2.png" />
+                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins">BREAKING BOUNDARIES</h3>
+                <p class="text-white text-base md:text-lg font-poppins">Anuoluwapo Lebi for Culture HQ</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news3.png" />
+                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins">IN CONVERSATION</h3>
+                <p class="text-white text-base md:text-lg font-poppins">The Artistic Vision Behind Mother’s Love – USC Annenberg – MAY 2025</p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news4.png" />
+                <h3 class="text-white text-xl md:text-2xl font-poppins">Behind the Scenes: First Look at the Set of 'RR'</h3>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news5.png" />
+                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins">AN ICON’S JOURNEY TO INDIE FILM</h3>
+                <p class="text-white text-base md:text-lg font-poppins">Black Film Wire Press Release – MAY 2025</p>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news6.png" />
+                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins">BREAKING BOUNDARIES</h3>
+                <p class="text-white text-base md:text-lg font-poppins">Anuoluwapo Lebi for Culture HQ</p>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news7.png" />
+                <h3 class="text-white text-xl md:text-2xl font-poppins">Behind the Scenes: First Look at the Set of 'RR'</h3>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news8.png" />
+                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins">AN ICON’S JOURNEY TO INDIE FILM</h3>
+                <p class="text-white text-base md:text-lg font-poppins">Black Film Wire Press Release – MAY 2025</p>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news9.png" />
+                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins">BREAKING BOUNDARIES</h3>
+                <p class="text-white text-base md:text-lg font-poppins">Anuoluwapo Lebi for Culture HQ</p>
+            </div>
+
+            <!-- CARD 10 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news10.png" />
+                <h3 class="text-white text-xl md:text-2xl font-poppins">Behind the Scenes: First Look at the Set of 'RR'</h3>
+            </div>
+
+            <!-- CARD 11 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news11.png" />
+                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins">AN ICON’S JOURNEY TO INDIE FILM</h3>
+                <p class="text-white text-base md:text-lg font-poppins">Black Film Wire Press Release – MAY 2025</p>
+            </div>
+
+            <!-- CARD 12 -->
+            <div class="flex flex-col gap-5">
+                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news12.png" />
+                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins">BREAKING BOUNDARIES</h3>
+                <p class="text-white text-base md:text-lg font-poppins">Anuoluwapo Lebi for Culture HQ</p>
+            </div>
+
+        </div>
+
+        <!-- LOAD MORE BUTTON -->
+        <div class="flex justify-center">
+            <button class="bg-orange-300 text-white text-lg font-poppins px-6 py-3">
+                Load More
+            </button>
+        </div>
+
+        <!-- NEWSLETTER SECTION -->
+        <div class="flex flex-col md:flex-row justify-between gap-16 py-10">
+
+            <div class="md:w-1/2 space-y-5">
+                <h2 class="text-orange-300 text-5xl md:text-6xl font-bebas_neus">Keep in the loop</h2>
+                <p class="text-white text-base md:text-lg font-poppins">
+                    Join us for exciting giveaways, early access to screenings, sneak peeks, and special offers from RedHot Concept without the clutter of endless emails!
+                </p>
+            </div>
+
+            <div class="md:w-1/2 space-y-10">
+                
+                <!-- Email -->
+                <div>
+                    <label class="text-white text-lg font-bold font-poppins">Email</label>
+                    <input type="text" placeholder="Your Email"
+                        class="w-full bg-transparent border-b-2 border-orange-300 text-white p-2 outline-none placeholder:text-lg" />
+                </div>
+
+                <!-- Fullname -->
+                <div>
+                    <label class="text-white text-lg font-bold font-poppins">Full Name</label>
+                    <input type="text" placeholder="Full Name"
+                        class="w-full bg-transparent border-b-2 border-orange-300 text-white p-2 outline-none placeholder:text-lg" />
+                </div>
+
+                <!-- Checkbox -->
+                <div class="flex gap-3">
+                    <input type="checkbox">
+                    <p class="text-white text-base md:text-lg font-poppins">
+                        By checking this box you agree to our 
+                        <span class="underline">Privacy Policy</span> and 
+                        <span class="underline">Terms of Service</span>.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="w-full py-16 border-t border-orange-300 flex flex-col items-center gap-8 px-4 text-center">
+
+        <div class="flex flex-wrap justify-center items-center gap-6">
+            <div class="text-white text-sm font-normal font-poppins">About Us</div>
+            <div class="text-white text-sm font-normal font-poppins">Contact Us</div>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center gap-4 max-w-4xl">
+            <div class="text-white text-sm font-normal font-poppins">Terms of Use</div>
+            <div class="text-white text-sm font-normal font-poppins">Privacy Policy</div>
+            <div class="text-white text-sm font-normal font-poppins">Your Privacy Rights</div>
+            <div class="text-white text-sm font-normal font-poppins">Children’s Online Privacy Policy</div>
+            <div class="text-white text-sm font-normal font-poppins">Interest-Based Ads</div>
+        </div>
+
+        <div class="text-white text-sm font-normal font-poppins">
+            Do Not Sell My Information
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center gap-8 text-xl text-white">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+        <div class="text-white text-sm font-normal font-poppins">
+            ©2025 Redhot Concept. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    let isOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+        isOpen = !isOpen;
+
+        mobileMenu.classList.toggle("hidden");
+
+        menuBtn.innerHTML = isOpen
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+    });
+</script>
+
+</html>

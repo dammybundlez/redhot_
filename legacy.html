@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Legacy</title>
+</head>
+<body>
+    <header class="px-10 fixed w-full top-8 left-0 z-50 blur-xs font-poppins">
+        <div class="backdrop-blur-md flex justify-between items-center bg-zinc-900/90 px-4 shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.10)] shadow-lg rounded-lg outline outline-1 outline-offset-[-1px] outline-orange-300/10">
+            <div>
+                <div class="flex items-center gap-2">
+                    <a href="index.html">
+                        <img src="/public/img124.png" class="w-16 h-auto object-cover">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <button id="menuBtn" class="md:hidden text-white text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+    
+                <nav class="hidden md:flex text-sm">
+                    <ul class="flex items-center text-white gap-10 uppercase">
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="films.html">Films</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="news.html">News</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="legacy.html">30 Years legacy</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="">Others <span class="text-sm pl-2"><i class="fa-solid fa-chevron-down"></i></span></a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="about.html">About</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-zinc-900/90 border-t border-orange-300/10 rounded-b-xl
+                            shadow-lg transition-all duration-400 overflow-hidden">
+            <ul class="flex flex-col text-white gap-6 uppercase p-6">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="legacy.html">30 Years legacy</a></li>
+                <li><a href="#">Others <span class="text-sm"><i class="fa-solid fa-chevron-down"></i></span></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header> 
+</body>
+<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    let isOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+        isOpen = !isOpen;
+
+        // Toggle menu visibility
+        mobileMenu.classList.toggle("hidden");
+
+        // Animate hamburger to X
+        menuBtn.innerHTML = isOpen
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+    });
+</script>
+
+<script>
+    const scrollContainer = document.getElementById("scrollContainer");
+    const scrollLeft = document.getElementById("scrollLeft");
+    const scrollRight = document.getElementById("scrollRight");
+
+    scrollLeft.addEventListener("click", () => {
+        scrollContainer.scrollBy({
+            left: -350,
+            behavior: "smooth"
+        });
+    });
+
+    scrollRight.addEventListener("click", () => {
+        scrollContainer.scrollBy({
+            left: 350,
+            behavior: "smooth"
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(./poppins/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'bebas_neus';
+    src: url(./bebas_neus/Bebas-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.hero {
+    background: url('public/herobg.png');
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+
+.bgimg {
+    background: url('IMG_1548.PNG');
+    height: 100%;
+    width: 20%;
+    object-fit: fill;
+}
