@@ -12,11 +12,35 @@
     font-style: normal;
 }
 
+
+    @font-face {
+    font-family: 'quantify';
+    src: url(./quantify/Quantify.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 1s forwards;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 .hero {
     background: url('public/herobg.png');

@@ -8,6 +8,7 @@ module.exports = {
       fontFamily : {
         poppins : [ 'poppins' , 'san-serif'],
         bebas_neus : [ 'bebas_neus' , 'san-serif'],
+        quantify : [ 'quantify' , 'san-serif'],
       },
     },
   },

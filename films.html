@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/output.css">
 </head>
 <body class="bg-zinc-900">
-    <header class="px-10 fixed w-full top-8 left-0 z-50 blur-xs font-poppins">
+    <header class="md:px-10 px-4 fixed w-full top-2 left-0 z-50 blur-xs font-poppins">
         <div class="backdrop-blur-md flex justify-between items-center bg-zinc-900/90 px-4 shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.10)] shadow-lg rounded-lg outline outline-1 outline-offset-[-1px] outline-orange-300/10">
             <div>
                 <div class="flex items-center gap-2">
@@ -46,29 +46,29 @@
             </ul>
         </div>
     </header> 
-    <div class="relative w-full pt-20">
-    <img src="public/herobg.png" class="w-full object-cover max-h-[90vh]" alt="">
+    <div class="relative w-full mt-28">
+        <img src="public/herobg.png" class="w-full object-cover h-screen" alt="">
 
-    <div class="absolute bottom-5 md:bottom-10 left-5 md:left-10 py-4">
-        <div class="space-y-3">
-            <p class="text-4xl md:text-7xl lg:text-8xl w-4/5 text-orange-300 uppercase font-bebas_neus leading-tight">
-                A MOTHER’S LOVE
-            </p>
+        <div class="absolute bottom-5 md:bottom-10 left-5 md:left-10 py-4">
+            <div class="space-y-3">
+                <p class="text-4xl md:text-7xl lg:text-8xl w-4/5 text-orange-300 uppercase font-bebas_neus leading-tight">
+                    A MOTHER’S LOVE
+                </p>
 
-            <p class="text-white text-sm md:text-lg font-archivo">
-                Now Available Only in Theaters
-            </p>
+                <p class="text-white text-sm md:text-lg font-archivo">
+                    Now Available Only in Theaters
+                </p>
 
-            <div class="flex flex-col sm:flex-row md:gap-7 gap-3 mt-4">
-                <button class="bg-orange-300 text-sm md:text-xl text-white py-2 px-5 md:px-6">
-                    Buy Tickets
-                </button>
-                <button class="bg-transparent text-sm md:text-xl text-white py-2 px-5 md:px-6 border border-orange-300">
-                    View Trailer
-                </button>
+                <div class="flex flex-col sm:flex-row md:gap-7 gap-3 mt-4">
+                    <button class="bg-orange-300 text-sm md:text-xl text-white py-2 px-5 md:px-6">
+                        Buy Tickets
+                    </button>
+                    <button class="bg-transparent text-sm md:text-xl text-white py-2 px-5 md:px-6 border border-orange-300">
+                        View Trailer
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <main class="md:px-14 px-6 py-10 space-y-10">
 
@@ -86,21 +86,19 @@
             </div>
 
             <!-- Categories -->
-            <div class="flex flex-wrap gap-x-8 gap-y-3 text-white font-poppins">
-                <p class="border-b-2 pb-1 border-orange-300 cursor-pointer">Featured</p>
-                <p class="cursor-pointer">Romance</p>
-                <p class="cursor-pointer">Drama</p>
-                <p class="cursor-pointer">Action/Thriller</p>
-                <p class="cursor-pointer">Horror</p>
-                <p class="cursor-pointer whitespace-nowrap">Historical Epics</p>
+            <div class="overflow-x-auto overflow-y-hidden snap-x snap-mandatory flex scroll-smooth scrollbar-hide gap-x-8 gap-y-3 text-white font-poppins">
+                <p class="border-b-2 pb-1 border-orange-300 cursor-pointer snap-start flex-shrink-0">Featured</p>
+                <p class="cursor-pointer snap-start flex-shrink-0">Romance</p>
+                <p class="cursor-pointer snap-start flex-shrink-0">Drama</p>
+                <p class="cursor-pointer snap-start flex-shrink-0">Action/Thriller</p>
+                <p class="cursor-pointer snap-start flex-shrink-0">Horror</p>
+                <p class="cursor-pointer whitespace-nowrap snap-start flex-shrink-0">Historical Epics</p>
             </div>
         </div>
 
 
-        <!-- Film Grid -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-            <!-- FILM CARD - REPEATABLE -->
             <div class="flex flex-col gap-4">
                 <div class="relative">
                     <img src="public/herobg.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
@@ -113,6 +111,59 @@
                 <p class="text-white text-lg font-poppins">Rattle Snake</p>
             </div>
 
+            <div class="flex flex-col gap-4">
+                <div class="relative">
+                    <img src="public/aboutHero.png" class="w-full h-[300px] brightness-75 md:h-[454px] object-cover rounded">
+                    <div class="absolute bottom-4 left-0 right-0 text-center space-y-1">
+                        <p class="text-white text-xl font-bebas_neus">RR</p>
+                        <p class="text-white text-xs font-poppins">A MOVIE INSPIRED BY TRUE EVENT</p>
+                        <p class="text-white text-xs font-poppins">FILM FESTIVAL PRESS KIT</p>
+                    </div>
+                </div>
+                <p class="text-white text-lg font-poppins">RR</p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <img src="public/film3.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
+                <p class="text-white text-lg font-poppins">Rattle Snake</p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <img src="public/film4.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
+                <p class="text-white text-lg font-poppins">Alter Ego</p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <img src="public/film5.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
+                <p class="text-white text-lg font-poppins">Blood Sister</p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <img src="public/film6.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
+                <p class="text-white text-lg font-poppins">Ije: The Journey</p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <img src="public/film7.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
+                <p class="text-white text-lg font-poppins">LAst Flight To Abuja</p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <img src="public/film8.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
+                <p class="text-white text-lg font-poppins">Last Flight To Abuja</p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <div class="relative">
+                    <img src="public/herobg.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
+                    <div class="absolute bottom-4 left-0 right-0 text-center space-y-1">
+                        <p class="text-orange-300 text-xl font-bebas_neus">A Mother’s Love</p>
+                        <p class="text-white text-xs font-poppins">A MOVIE INSPIRED BY TRUE EVENT</p>
+                        <p class="text-white text-xs font-poppins">FILM FESTIVAL PRESS KIT</p>
+                    </div>
+                </div>
+                <p class="text-white text-lg font-poppins">Rattle Snake</p>
+            </div>
 
             <div class="flex flex-col gap-4">
                 <div class="relative">
