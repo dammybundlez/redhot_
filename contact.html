@@ -8,43 +8,78 @@
     <title>Contact Us</title>
 </head>
 <body class="bg-zinc-900">
-    <header class="md:px-10 px-4 fixed w-full top-2 left-0 z-50 blur-xs font-poppins">
-        <div class="backdrop-blur-md flex justify-between items-center bg-zinc-900/90 px-4 shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.10)] shadow-lg rounded-lg outline outline-1 outline-offset-[-1px] outline-orange-300/10">
-            <div>
-                <div class="flex items-center gap-2">
-                    <a href="index.html">
-                        <img src="/public/img124.png" class="w-16 h-auto object-cover">
-                    </a>
-                </div>
-            </div>
-            <div>
-                <button id="menuBtn" class="md:hidden text-white text-2xl">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-    
-                <nav class="hidden md:flex text-sm">
-                    <ul class="flex items-center text-white gap-10 uppercase">
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="films.html">Films</a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="news.html">News</a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="legacy.html">30 Years legacy</a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="">Others <span class="text-sm pl-2"><i class="fa-solid fa-chevron-down"></i></span></a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="about.html">About</a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <header class="fixed top-2 left-0 w-full z-50 px-4 md:px-10 font-poppins">
+    <div
+        id="navbar"
+        class="bg-zinc-900/90 backdrop-blur-md rounded-lg
+            outline outline-1 outline-orange-300/10
+            transition-[max-height] duration-500 ease-in-out overflow-hidden md:overflow-visible"
+        style="max-height: 95px"
+    >
+
+        <div class="flex justify-between items-center px-4 ">
+            <a href="index.html">
+                <img src="/public/img124.png" class="w-16" />
+            </a>
+
+            <button id="menuBtn" class="md:hidden text-white text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="hidden md:flex text-sm">
+                <ul class="flex items-center text-white gap-10 uppercase">
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="films.html">Films</a></li>
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="news.html">News</a></li>
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="legacy.html">30 Years legacy</a></li>
+                    <li class="relative group">
+                        <a class="hover:text-orange-300 transition-all duration-200 flex items-center gap-2" 
+                            id="othersBtn" 
+                            aria-expanded="false"
+                            href="#">Others <span class="text-sm pl-2"><i class="fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <div
+                            id="othersDropdown"
+                            class="absolute top-full mt-4 left-2/5 -translate-x-1/2 w-[230px] px-5 py-5 rounded-xl outline outline-4 outline-orange-300 bg-zinc-900/90
+                                backdrop-blur-xl border border-orange-300 shadow-[0_8px_32px_rgba(0,0,0,0.35)] invisible group-hover:opacity-100 group-hover:visible
+                                transition-all duration-300 z-[999px]">
+                            <div class="relative text-neutral-50 text-base font-normal font-poppins leading-relaxed">
+                                <a href="" class="hover:text-orange-300 transition-all duration-200">OYEP</a>  <br><br>
+                                <a href="" class="hover:text-orange-300 transition-all duration-200">OSEAL</a>  <br><br>
+                                <a href="" class="hover:text-orange-300 transition-all duration-200">TEFFEST</a> <br><br>
+                                <a href="" class="hover:text-orange-300 transition-all duration-200">DOUBLE DOORS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="about.html">About</a></li>
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="mobileMenu" class="hidden md:hidden bg-zinc-900/90 border-t border-orange-300/10 rounded-b-xl
-                            shadow-lg transition-all duration-400 overflow-hidden">
-            <ul class="flex flex-col text-white gap-6 uppercase p-6">
-                <li><a href="films.html">Films</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="legacy.html">30 Years legacy</a></li>
-                <li><a href="#">Others <span class="text-sm"><i class="fa-solid fa-chevron-down"></i></span></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+        <nav id="mobileMenu" class="md:hidden px-4 pb-6 h-full">
+            <ul class="flex flex-col text-white gap-y-3 uppercase p-6 border-t border-orange-300/10">
+                    <li class=""><a href="films.html" class="hover:text-orange-300 transition-all ease-out duration-200">Films</a></li>
+                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="news.html">News</a></li>
+                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="legacy.html">30 Years legacy</a></li>
+                    <li class=""><button class="hover:text-orange-300 transition-all ease-out duration-200" id="othersToggle">OTHERS <span class="text-sm"><i id="othersIcon" class="fa-solid fa-chevron-down transition-transform duration-300"></i></span></button>
+                        <ul
+                            id="othersAccordion"
+                            class="mt-1 ml-4 space-y-3 text-sm
+                                max-h-0 overflow-hidden
+                                transition-all duration-300"
+                        >
+                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OYEP</a></li>
+                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OSEAL</a></li>
+                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">TEFFEST</a></li>
+                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">Double Doors</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="about.html">About</a></li>
+                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
+
+    </div>
     </header> 
     <div class="md:px-20 px-6 py-10 mt-40">
         <div class="flex flex-col md:flex-row justify-between items-start md:gap-10 gap-16">
@@ -123,21 +158,173 @@
     </footer>
 </body>
 <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    let isOpen = false;
+  const menuBtn = document.getElementById('menuBtn');
+  const navbar = document.getElementById('navbar');
 
-    menuBtn.addEventListener("click", () => {
-        isOpen = !isOpen;
+  let open = false;
 
-        // Toggle menu visibility
-        mobileMenu.classList.toggle("hidden");
+  menuBtn.addEventListener('click', () => {
+    open = !open;
 
-        // Animate hamburger to X
-        menuBtn.innerHTML = isOpen
-            ? '<i class="fa-solid fa-xmark"></i>'
-            : '<i class="fa-solid fa-bars"></i>';
+    if (open) {
+      navbar.style.maxHeight = '480px';
+    } else {
+      navbar.style.maxHeight = '95px'; 
+    }
+    menuBtn.innerHTML = open
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+  });
+
+</script>
+
+<script>
+document.querySelectorAll(".scroll-section").forEach(section => {
+
+    const container = section.querySelector(".scroll-container");
+    const leftBtn = section.querySelector(".scroll-left");
+    const rightBtn = section.querySelector(".scroll-right");
+
+    leftBtn.addEventListener("click", () => {
+        container.scrollBy({ left: -350, behavior: "smooth" });
     });
+
+    rightBtn.addEventListener("click", () => {
+        container.scrollBy({ left: 350, behavior: "smooth" });
+    });
+
+});
+</script>
+
+<!-- Hero slider -->
+<script>
+    const slides = [
+  {
+    bg: "public/herobg.png",
+    title: "A MOTHER’S LOVE",
+    subtitle: "Now Available Only in Theaters",
+    href: "moviedetails.html"
+  },
+  {
+    bg: "public/rr.png",
+    title: "RR The Movie",
+    subtitle: "Coming To Theatres Soon",
+  },
+  {
+    bg: "public/rs.png",
+    title: "Rattle Snake",
+    subtitle: "The Entertainment Fair",
+  },
+  {
+    bg: "public/lastflight.png",
+    title: "Last Flight To Abuja",
+    subtitle: "Coming To Theatres Soon",
+  }
+];
+
+let currentIndex = 0;
+
+const heroBg = document.querySelector(".hero-bg");
+const heroTitle = document.querySelector(".hero-title");
+const heroSub = document.querySelector(".hero-sub");
+const heroLink = document.querySelector(".hero-link");
+const tabs = document.querySelectorAll(".hero-tab");
+
+function updateSlide(i) {
+  const slide = slides[i];
+
+  heroBg.style.opacity = 0; 
+
+  setTimeout(() => {
+    heroBg.src = slide.bg;  
+    heroTitle.textContent = slide.title;
+    heroSub.textContent = slide.subtitle;
+    heroBg.style.opacity = 1;
+  }, 500);
+
+  tabs.forEach((tab, index) => {
+    if (index === i) {
+      tab.classList.remove("border-white/30");
+      tab.classList.add("border-orange-300");
+    } else {
+      tab.classList.add("border-white/30");
+      tab.classList.remove("border-orange-300");
+    }
+  });
+}
+
+document.querySelector(".scroll-right").onclick = () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlide(currentIndex);
+};
+
+document.querySelector(".scroll-left").onclick = () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateSlide(currentIndex);
+};
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlide(currentIndex);
+}, 5000);
+
+</script>
+
+<!-- desktop other dropdown click -->
+<script>
+  const btn = document.getElementById('othersBtn');
+  const dropdown = document.getElementById('othersDropdown');
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdown.classList.toggle('opacity-0');
+    dropdown.classList.toggle('invisible');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.classList.add('opacity-0', 'invisible');
+    }
+  });
+</script>
+
+<!-- mobile view accordion -->
+<script>
+  const toggle = document.getElementById('othersToggle');
+  const accordion = document.getElementById('othersAccordion');
+  const icon = document.getElementById('othersIcon');
+
+  toggle.addEventListener('click', () => {
+    const isOpen = accordion.style.maxHeight;
+
+    if (isOpen) {
+      accordion.style.maxHeight = null;
+      icon.classList.remove('rotate-180');
+    } else {
+      accordion.style.maxHeight = accordion.scrollHeight + 'px';
+      icon.classList.add('rotate-180');
+    }
+  });
+</script>
+
+<script>
+  const modal = document.getElementById("exitModal");
+
+  function openModal() {
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+    document.body.style.overflow = "";
+  }
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
 </script>
 
 </html>

@@ -8,48 +8,83 @@
     <title>Blog Post</title>
 </head>
 <body class="bg-zinc-900">
-    <header class="px-10 fixed w-full top-8 left-0 z-50 blur-xs font-poppins">
-        <div class="backdrop-blur-md flex justify-between items-center bg-zinc-900/90 px-4 shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.10)] shadow-lg rounded-lg outline outline-1 outline-offset-[-1px] outline-orange-300/10">
-            <div>
-                <div class="flex items-center gap-2">
-                    <a href="index.html">
-                        <img src="/public/img124.png" class="w-16 h-auto object-cover">
-                    </a>
-                </div>
-            </div>
-            <div>
-                <button id="menuBtn" class="md:hidden text-white text-2xl">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-    
-                <nav class="hidden md:flex text-sm">
-                    <ul class="flex items-center text-white gap-10 uppercase">
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="films.html">Films</a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="news.html">News</a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="legacy.html">30 Years legacy</a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="">Others <span class="text-sm pl-2"><i class="fa-solid fa-chevron-down"></i></span></a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="about.html">About</a></li>
-                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <header class="fixed top-2 left-0 w-full z-50 px-4 md:px-10 font-poppins">
+    <div
+        id="navbar"
+        class="bg-zinc-900/90 backdrop-blur-md rounded-lg
+            outline outline-1 outline-orange-300/10
+            transition-[max-height] duration-500 ease-in-out overflow-hidden md:overflow-visible"
+        style="max-height: 95px"
+    >
+
+        <div class="flex justify-between items-center px-4 ">
+            <a href="index.html">
+                <img src="/public/img124.png" class="w-16" />
+            </a>
+
+            <button id="menuBtn" class="md:hidden text-white text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="hidden md:flex text-sm">
+                <ul class="flex items-center text-white gap-10 uppercase">
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="films.html">Films</a></li>
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="news.html">News</a></li>
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="legacy.html">30 Years legacy</a></li>
+                    <li class="relative group">
+                        <a class="hover:text-orange-300 transition-all duration-200 flex items-center gap-2" 
+                            id="othersBtn" 
+                            aria-expanded="false"
+                            href="#">Others <span class="text-sm pl-2"><i class="fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <div
+                            id="othersDropdown"
+                            class="absolute top-full mt-4 left-2/5 -translate-x-1/2 w-[230px] px-5 py-5 rounded-xl outline outline-4 outline-orange-300 bg-zinc-900/90
+                                backdrop-blur-xl border border-orange-300 shadow-[0_8px_32px_rgba(0,0,0,0.35)] invisible group-hover:opacity-100 group-hover:visible
+                                transition-all duration-300 z-[999px]">
+                            <div class="relative text-neutral-50 text-base font-normal font-poppins leading-relaxed">
+                                <a href="" class="hover:text-orange-300 transition-all duration-200">OYEP</a>  <br><br>
+                                <a href="" class="hover:text-orange-300 transition-all duration-200">OSEAL</a>  <br><br>
+                                <a href="" class="hover:text-orange-300 transition-all duration-200">TEFFEST</a> <br><br>
+                                <a href="" class="hover:text-orange-300 transition-all duration-200">DOUBLE DOORS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="about.html">About</a></li>
+                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="mobileMenu" class="hidden md:hidden bg-zinc-900/90 border-t border-orange-300/10 rounded-b-xl
-                            shadow-lg transition-all duration-400 overflow-hidden">
-            <ul class="flex flex-col text-white gap-6 uppercase p-6">
-                <li><a href="films.html">Films</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="legacy.html">30 Years legacy</a></li>
-                <li><a href="#">Others <span class="text-sm"><i class="fa-solid fa-chevron-down"></i></span></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+        <nav id="mobileMenu" class="md:hidden px-4 pb-6 h-full">
+            <ul class="flex flex-col text-white gap-y-3 uppercase p-6 border-t border-orange-300/10">
+                    <li class=""><a href="films.html" class="hover:text-orange-300 transition-all ease-out duration-200">Films</a></li>
+                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="news.html">News</a></li>
+                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="legacy.html">30 Years legacy</a></li>
+                    <li class=""><button class="hover:text-orange-300 transition-all ease-out duration-200" id="othersToggle">OTHERS <span class="text-sm"><i id="othersIcon" class="fa-solid fa-chevron-down transition-transform duration-300"></i></span></button>
+                        <ul
+                            id="othersAccordion"
+                            class="mt-1 ml-4 space-y-3 text-sm
+                                max-h-0 overflow-hidden
+                                transition-all duration-300"
+                        >
+                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OYEP</a></li>
+                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OSEAL</a></li>
+                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">TEFFEST</a></li>
+                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">Double Doors</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="about.html">About</a></li>
+                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
+
+    </div>
     </header> 
-    <main class="md:px-20 px-6 py-10 mt-40 space-y-10">
+    <main class="md:px-20 px-6 py-10 mt-24 space-y-10">
         <div class="">
-            <h1 class="text-center justify-start text-orange-300 text-[100px] font-normal leading-tight font-bebas_neus">THE REAL ME: Behind the Curtain of a Cinematic Family</h1>
-            <p class="text-center justify-start text-neutral-50 text-2xl font-normal font-poppins">8th Dec 2025</p>
+            <h1 class="text-center justify-start text-orange-300 md:text-8xl text-4xl font-normal leading-tight font-bebas_neus">THE REAL ME: Behind the Curtain of a Cinematic Family</h1>
+            <p class="text-center justify-start text-neutral-50 md:text-2xl text-lg font-normal font-poppins">8th Dec 2025</p>
         </div>
         <div>
             <img class="h-[700px] w-full object-cover" src="/public/bloghero.png" alt="">
@@ -57,21 +92,21 @@
 
         <section>
             <div class="w-full inline-flex flex-col justify-start items-start gap-[38px]">
-                <h1 class="w-3/5 justify-start text-orange-300 text-6xl font-normal font-bebas_neus">A Foundation Unshakeable: The Ekeinde Clan</h1>
+                <h1 class="md:w-3/5 w-4/5 md:text-6xl text-3xl justify-start text-orange-300  font-normal font-bebas_neus">A Foundation Unshakeable: The Ekeinde Clan</h1>
                 <p class="self-stretch justify-start text-white text-lg font-normal font-poppins">Beyond the red carpets, the global film sets, and the mantle of awards, Omotola Jalade Ekeinde, MFR, has built a life as robust and respected as her career: that of a dedicated wife and mother. Her family life is not a footnote to her success; it is the powerful foundation that sustains her three-decade legacy. Omotola's journey with her husband, Captain Matthew Ekeinde, is one of Nollywood’s most celebrated partnerships. They share a unique bond, having been married in a symbolic ceremony mid-air—a fitting start for a union that has soared through the heights of international fame.</p>
             </div>
         </section>
 
         <section>
             <div class="w-full inline-flex flex-col justify-start items-start gap-[38px]">
-            <h1 class="w-2/5 justify-start text-orange-300 text-6xl font-normal font-bebas_neus">The Captain and the Queen</h1>
+            <h1 class="md:w-3/5 w-4/5 md:text-6xl text-3xl  justify-start text-orange-300 font-normal font-bebas_neus">The Captain and the Queen</h1>
             <p class="self-stretch justify-start text-white text-lg font-normal font-['Poppins']">In a world where celebrity unions often face relentless scrutiny, the Ekeindes have anchored their marriage for over two decades. The secret, according to the actress, lies in a shared commitment and her husband’s supportive nature. Captain Ekeinde, an airline pilot, is described as having a calm personality and prioritizing peace over the spotlight, ensuring the home front remains a sanctuary from the relentless demands of Hollywood and Nollywood.<br/><br/>Omotola has explicitly credited their longevity to this shared foundation and mutual respect, noting the value of his simple-mindedness and lack of competition with her public profile.</p>
             </div>
         </section>
 
         <section>
             <div class="w-full inline-flex flex-col justify-start items-start gap-[38px]">
-                <h1 class="w-3/5 justify-start text-orange-300 text-6xl font-normal font-bebas_neus">The "Omosexy" Philosophy: Sacrifice None</h1>
+                <h1 class="md:w-3/5 w-4/5 md:text-6xl text-3xl  justify-start text-orange-300 font-normal font-bebas_neus">The "Omosexy" Philosophy: Sacrifice None</h1>
                 <p class="self-stretch justify-start text-white text-lg font-normal font-poppins">Omotola and Captain Matthew Ekeinde are blessed with four children: Princess, Captain E (Matthew Jr.), Meraiah, and Michael.<br/>The actress has consistently demonstrated that a woman does not have to choose between ambition and family. Her philosophy is clear: “Sacrifice none. If you design your life intentionally, you don’t have to lose yourself to succeed.” This commitment is visible in her approach to raising her children—a firm but loving parenting style—and in her early decision to introduce her family to the public eye via the groundbreaking reality show, Omotola: The Real Me.<br/><br/>Today, the Ekeinde children have grown into successful adults in their own right, with their mother’s dedication to structure and discipline having guided them into their respective fields. For Omotola, family is the ultimate project, proving that a life built on strong values can thrive even under the brightest lights of global stardom.</p>
             </div>
         </section>
@@ -102,7 +137,7 @@
                         </div>
                     </div>
                     <div id="scrollContainer" 
-                        class="w-4/5 overflow-x-auto overflow-y-hidden scrollbar-hide 
+                        class="md:w-4/5 overflow-x-auto overflow-y-hidden scrollbar-hide 
                         snap-x snap-mandatory flex gap-6 p-2 md:p-4 scroll-smooth">
 
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
