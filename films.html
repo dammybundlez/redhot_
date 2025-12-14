@@ -131,7 +131,6 @@
             </div>
         </div>
 
-
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
             <div class="flex flex-col gap-4">
@@ -143,7 +142,7 @@
                         <p class="text-white text-xs font-poppins">FILM FESTIVAL PRESS KIT</p>
                     </div>
                 </div>
-                <p class="text-white text-lg font-poppins">Rattle Snake</p>
+                <p class="text-white text-lg font-poppins">A Mother's Love</p>
             </div>
 
             <div class="flex flex-col gap-4">
@@ -242,64 +241,79 @@
                 <p class="text-white text-lg font-poppins">Last Flight To Abuja</p>
             </div>
         </div>
-        <section class="w-full py-10">
-            <div class="space-y-8">
 
-                <div class="flex justify-end self-end items-end">
-                    <div class="flex items-center gap-6">
-                        <button id="scrollLeft"
-                            class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-white text-white bg-black/40 backdrop-blur-sm">
-                            <i class="fa-solid fa-chevron-left text-xl"></i>
+        <section class="w-full py-10">
+            <div class="scroll-section flex flex-col justify-between items-start gap-10 w-full">
+                <div class="w-full flex justify-end self-end items-end gap-3">       
+                    <div class="control md:space-x-10 space-x-4 flex items-center">
+                        <button  class="scroll-left md:w-12 w-8 md:h-12 h-8 text-white text-xl border-2 border-white rounded-full 
+                            flex items-center justify-center bg-black/40 backdrop-blur-sm">
+                            <i class="fa-solid fa-chevron-left"></i>
                         </button>
-                        <button id="scrollRight"
-                            class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-white text-white bg-black/40 backdrop-blur-sm">
-                            <i class="fa-solid fa-chevron-right text-xl"></i>
+                        <button  class="scroll-right md:w-12 w-8 md:h-12 h-8 text-white text-xl border-2 border-white rounded-full 
+                            flex items-center justify-center bg-black/40 backdrop-blur-sm">
+                            <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
                 </div>
 
                 <div class="relative w-full flex flex-col md:flex-row">
-                    <div>
-                        <h1 class="text-orange-300 text-4xl md:text-6xl font-bebas_neus">Latest News</h1>
+                    <div class="w-full md:w-1/5">
+                        <h1 class="text-orange-300 text-4xl md:text-6xl font-bebas_neus">
+                            Latest <br>
+                             News
+                        </h1>
                         <div class="flex items-center gap-3 cursor-pointer">
-                            <h1 class="text-white text-lg font-poppins">View All News</h1>
-                            <i class="fa-solid fa-arrow-right text-white"></i>
+                            <h1 class="text-neutral-50 text-lg md:text-lg font-poppins">View All News</h1>
+                            <i class="fa-solid fa-arrow-right text-neutral-50 text-lg"></i>
                         </div>
                     </div>
-                    <div id="scrollContainer"
-                        class="md:w-4/5 w-full overflow-x-auto overflow-y-hidden snap-x snap-mandatory flex gap-6 p-2 scroll-smooth scrollbar-hide">
+                    <div id="scrollContainer" 
+                        class="scroll-container md:w-4/5 overflow-x-auto overflow-y-hidden scrollbar-hide 
+                        snap-x snap-mandatory flex gap-6 p-2 md:p-4 scroll-smooth w-full">
 
-                        
-                        <div class="min-w-[200px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
-                            <img src="public/news1.png" class="w-full h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-orange-300 text-2xl md:text-3xl font-bold mt-3">AN ICON’S JOURNEY TO INDIE FILM</p>
-                            <p class="text-white text-lg font-poppins">Black Film Wire – MAY 2025</p>
+                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news1.png" />
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">AN ICON’S JOURNEY TO INDIE FILM</h2>
+                                <p class="text-white text-lg font-poppins">Black Film Wire Press Release – MAY 2025</p>
+                            </div>
                         </div>
 
                         <!-- CARD 2 -->
-                        <div class="min-w-[200px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
-                            <img src="public/news2.png" class="w-full h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-orange-300 text-2xl md:text-3xl font-bold mt-3">BREAKING BOUNDARIES</p>
-                            <p class="text-white text-lg font-poppins">Anuoluwapo Lebi – Culture HQ</p>
+                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news2.png" />
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">BREAKING BOUNDARIES</h2>
+                                <p class="text-white text-lg font-poppins">Anuoluwapo Lebi for Culture HQ</p>
+                            </div>
                         </div>
 
                         <!-- CARD 3 -->
-                        <div class="min-w-[200px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
-                            <img src="public/news3.png" class="w-full h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-orange-300 text-2xl md:text-3xl font-bold mt-3">IN CONVERSATION</p>
-                            <p class="text-white text-lg font-poppins">USC Annenberg – MAY 2025</p>
+                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news3.png" />
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">IN CONVERSATION</h2>
+                                <p class="text-white text-lg font-poppins">
+                                    The Artistic Vision Behind Mother’s Love – USC Annenberg – MAY 2025
+                                </p>
+                            </div>
                         </div>
 
                         <!-- CARD 4 -->
-                        <div class="min-w-[200px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
-                            <img src="public/news4.png" class="w-full h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-white text-2xl md:text-3xl font-bold mt-3">30 Years of Impact</p>
+                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news4.png" />
+                            <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
+                                Omotola Jalade Ekeinde on 30 Years of Impact: A Global Storyteller
+                            </h2>
                         </div>
 
                         <!-- CARD 5 -->
-                        <div class="min-w-[200px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
-                            <img src="public/news5.png" class="w-full h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-white text-2xl md:text-3xl font-bold mt-3">Behind the Scenes</p>
+                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news5.png" />
+                            <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
+                                Behind the Scenes: First Look at the Set of 'RR'
+                            </h2>
                         </div>
 
                     </div>
@@ -310,21 +324,21 @@
     <footer class="w-full py-16 border-t border-orange-300 flex flex-col items-center gap-8 px-4 text-center">
 
         <div class="flex flex-wrap justify-center items-center gap-6">
-            <div class="text-white text-sm font-normal font-poppins">About Us</div>
-            <div class="text-white text-sm font-normal font-poppins">Contact Us</div>
+            <a href="about.html" class="text-white text-sm font-normal font-poppins">About Us</a>
+            <a href="contact.html" class="text-white text-sm font-normal font-poppins">Contact Us</a>
         </div>
 
-        <div class="flex flex-wrap justify-center items-center gap-4 max-w-4xl">
+        <!-- <div class="flex flex-wrap justify-center items-center gap-4 max-w-4xl">
             <div class="text-white text-sm font-normal font-poppins">Terms of Use</div>
             <div class="text-white text-sm font-normal font-poppins">Privacy Policy</div>
             <div class="text-white text-sm font-normal font-poppins">Your Privacy Rights</div>
             <div class="text-white text-sm font-normal font-poppins">Children’s Online Privacy Policy</div>
             <div class="text-white text-sm font-normal font-poppins">Interest-Based Ads</div>
-        </div>
+        </div> -->
 
-        <div class="text-white text-sm font-normal font-poppins">
+        <!-- <div class="text-white text-sm font-normal font-poppins">
             Do Not Sell My Information
-        </div>
+        </div> -->
 
         <div class="flex flex-wrap justify-center items-center gap-8 text-xl text-white">
             <i class="fa-brands fa-instagram"></i>

@@ -202,7 +202,7 @@
             </div>
 
             <a
-                href="#"
+                href="legacy.html"
                 class="inline-block text-[#C9A464] border-4 border-[#C9A464] px-6 py-3 font-bold uppercase hover:bg-[#C9A464] hover:text-black transition"
             >
                 Explore 30-Year Legacy
@@ -214,11 +214,10 @@
     </section>
 
     <main class="md:px-14 px-6 py-10 space-y-10">
-
         <section class="w-full py-10">
-            <div class="scroll-section flex flex-col justify-between items-start gap-10 w-full">
-                <div class="w-full flex justify-end self-end items-end gap-3">       
-                    <div class="md:space-x-10 space-x-4 flex items-center">
+            <div class="space-y-8 scroll-section">
+                <div class=" scroll-section flex flex-col justify-end items-end gap-10 w-full">       
+                    <div class="controls md:space-x-10 space-x-4 flex items-center">
                         <button  class="scroll-left md:w-12 w-8 md:h-12 h-8 text-white text-xl border-2 border-white rounded-full 
                             flex items-center justify-center bg-black/40 backdrop-blur-sm">
                             <i class="fa-solid fa-chevron-left"></i>
@@ -230,64 +229,51 @@
                     </div>
                 </div>
 
-                <div class="relative w-full flex flex-col md:flex-row">
-                    <div>
+                <div class="relative justify-between w-full flex flex-col md:flex-row">
+                    <div class="md:w-1/5 w-full">
                         <h1 class="text-orange-300 text-4xl md:text-6xl font-bebas_neus">
-                            Coming soon
+                            coming <br>
+                            soon
                         </h1>
                         <div class="flex items-center gap-3 cursor-pointer">
-                            <h1 class="text-neutral-50 text-lg md:text-lg font-poppins">View All News</h1>
+                            <h1 class="text-neutral-50 text-lg md:text-lg font-poppins">View All Movies</h1>
                             <i class="fa-solid fa-arrow-right text-neutral-50 text-lg"></i>
                         </div>
                     </div>
-                    <div id="" 
-                        class="scroll-container md:w-4/5 w-full overflow-x-auto overflow-y-hidden scrollbar-hide 
-                        snap-x snap-mandatory flex gap-6 p-2 md:p-4 scroll-smooth">
-
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news1.png" />
-                            <div class="flex flex-col gap-2">
-                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">AN ICON’S JOURNEY TO INDIE FILM</h2>
-                                <p class="text-white text-lg font-poppins">Black Film Wire Press Release – MAY 2025</p>
+                    <div class="scroll-container w-full md:w-4/5 overflow-x-auto overflow-y-hidden snap-x snap-mandatory flex gap-6 p-2 scroll-smooth scrollbar-hide">
+                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0 cursor-pointer" onclick="openModal()">
+                            <div class="relative">
+                                <img src="public/herobg.png" class="w-[420px] h-[300px] md:h-[454px] object-cover rounded">
+                                <div class="absolute bottom-4 left-0 right-0 text-center space-y-1">
+                                    <p class="text-orange-300 text-xl font-bebas_neus">A Mother’s Love</p>
+                                    <p class="text-white text-xs font-poppins">A MOVIE INSPIRED BY TRUE EVENT</p>
+                                    <p class="text-white text-xs font-poppins">FILM FESTIVAL PRESS KIT</p>
+                                </div>
                             </div>
+                            <p class="text-white text-xl font-poppins">A Mother's Love</p>
                         </div>
 
-                        <!-- CARD 2 -->
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news2.png" />
-                            <div class="flex flex-col gap-2">
-                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">BREAKING BOUNDARIES</h2>
-                                <p class="text-white text-lg font-poppins">Anuoluwapo Lebi for Culture HQ</p>
+                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
+                             <div class="relative">
+                                <img src="public/aboutHero.png" class="w-[420px] h-[300px] brightness-75 md:h-[454px] object-cover rounded">
+                                <div class="absolute bottom-4 left-0 right-0 text-center space-y-1">
+                                    <p class="text-white text-xl font-bebas_neus">RR</p>
+                                    <p class="text-white text-xs font-poppins">A MOVIE INSPIRED BY TRUE EVENT</p>
+                                    <p class="text-white text-xs font-poppins">FILM FESTIVAL PRESS KIT</p>
+                                </div>
                             </div>
+                            <p class="text-white text-xl font-poppins">RR</p>
                         </div>
 
-                        <!-- CARD 3 -->
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news3.png" />
-                            <div class="flex flex-col gap-2">
-                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">IN CONVERSATION</h2>
-                                <p class="text-white text-lg font-poppins">
-                                    The Artistic Vision Behind Mother’s Love – USC Annenberg – MAY 2025
-                                </p>
-                            </div>
+                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
+                            <img src="public/film3.png" class="w-[420px]h-[300px] brightness-75 md:h-[454px] object-cover rounded-lg">
+                            <p class="text-white text-xl font-poppins mt-3">Last Flight To Abuja</p>
                         </div>
 
-                        <!-- CARD 4 -->
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news4.png" />
-                            <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
-                                Omotola Jalade Ekeinde on 30 Years of Impact: A Global Storyteller
-                            </h2>
+                       <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
+                            <img src="public/film4.png" class="w-[420px]h-[300px] brightness-75 md:h-[454px] object-cover rounded-lg">
+                            <p class="text-white text-xl mt-3">The Ties That Binds</p>
                         </div>
-
-                        <!-- CARD 5 -->
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news5.png" />
-                            <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
-                                Behind the Scenes: First Look at the Set of 'RR'
-                            </h2>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -295,7 +281,7 @@
 
         <section class="w-full py-10">
             <div class="space-y-8 scroll-section">
-                <div class=" w-full flex justify-end self-end items-end gap-3">       
+                <div class=" scroll-section flex flex-col justify-end items-end gap-10 w-full">       
                     <div class="controls md:space-x-10 space-x-4 flex items-center">
                         <button  class="scroll-left md:w-12 w-8 md:h-12 h-8 text-white text-xl border-2 border-white rounded-full 
                             flex items-center justify-center bg-black/40 backdrop-blur-sm">
@@ -309,7 +295,7 @@
                 </div>
 
                 <div class="relative w-full flex flex-col md:flex-row">
-                    <div>
+                    <div class="md:w-1/5 w-full">
                         <h1 class="text-orange-300 text-4xl md:text-6xl font-bebas_neus">
                             featured Movies
                         </h1>
@@ -318,76 +304,74 @@
                             <i class="fa-solid fa-arrow-right text-neutral-50 text-lg"></i>
                         </div>
                     </div>
-                    <div 
-                        class="scroll-container w-full md:w-4/5 overflow-x-auto overflow-y-hidden snap-x snap-mandatory flex gap-6 p-2 scroll-smooth scrollbar-hide">
+                    <div class="scroll-container w-full md:w-4/5 overflow-x-auto overflow-y-hidden snap-x snap-mandatory flex gap-6 p-2 scroll-smooth scrollbar-hide">
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0 cursor-pointer" onclick="openModal()">
-                            <img src="public/film5.png" class="w-full h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-white text-lg font-poppins mt-3">Blood Sister</p>
+                            <img src="public/film5.png" class="w-[420px] h-[300px] brightness-75 md:h-[454px] object-cover rounded-lg">
+                            <p class="text-white text-xl font-poppins mt-3">Blood Sister</p>
                         </div>
 
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
-                            <img src="public/film6.png" class="w-full h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-white text-lg font-poppins mt-3">Ije: The Journey</p>
+                            <img src="public/film6.png" class="w-[420px] h-[300px] brightness-75 md:h-[454px] object-cover rounded-lg">
+                            <p class="text-white text-xl font-poppins mt-3">Ije: The Journey</p>
                         </div>
 
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
-                            <img src="public/film7.png" class="w-full h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-white text-lg font-poppins mt-3">Last Flight To Abuja</p>
+                            <img src="public/film7.png" class="w-[420px] h-[300px] brightness-75 md:h-[454px] object-cover rounded-lg">
+                            <p class="text-white text-xl font-poppins mt-3">Last Flight To Abuja</p>
                         </div>
 
-=                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
-                            <img src="public/film8.png" class="w-auto h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-white text-lg mt-3">The Ties That Binds</p>
+                       <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
+                            <img src="public/film8.png" class="w-[420px] h-[300px] brightness-75 md:h-[454px] object-cover rounded-lg">
+                            <p class="text-white text-xl mt-3">The Ties That Binds</p>
                         </div>
 
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] snap-start flex-shrink-0">
-                            <img src="public/film3.png" class="w-full h-72 md:h-96 object-cover rounded-lg">
-                            <p class="text-white text-lg mt-3">Rattle Snake</p>
+                            <img src="public/film3.png" class="w-[420px] h-[300px] brightness-75 md:h-[454px] object-cover rounded-lg">
+                            <p class="text-white text-xl mt-3">Rattle Snake</p>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
+        
         <section>
-        <div class="bg-black px-10 py-10 rounded-2xl flex flex-col md:flex-row justify-between items-start w-full md:h-[700px] h-full overflow-hidden">
-            <div class="md:w-1/2 w-full flex flex-col justify-start items-start gap-10">
-                <img class="w-[196px] h-[139px]" src="/public/4d581a4123b5c8ee6f56852c1e0f6201b67eba80.png" />
-                
-                <h1 class="text-neutral-50 text-5xl md:text-7xl font-normal font-quantify leading-tight">
-                    Your Favorite Meal is just 1 Tap Away
-                </h1>
-                
-                <p class="text-neutral-50 text-lg md:text-xl font-normal font-quantify">
-                    Your favorite meal is only a single tap away, ready to be delivered to your doorstep with just a click!
-                </p>
-                <div class="flex items-center space-x-5">
-                    <div class="bg-white px-4 py-1 rounded-lg flex items-center gap-4 cursor-pointer">
-                        <img src="" alt="">
-                        <div class="font-bold font-poppins">
-                            <p class="text-xs">Available on the</p>
-                            <p class="text-xl">App Store</p>
+            <div class="bg-black px-10 py-10 rounded-2xl flex flex-col md:flex-row justify-between items-start w-full md:h-[700px] h-full overflow-hidden">
+                <div class="md:w-1/2 w-full flex flex-col justify-start items-start gap-10">
+                    <img class="w-[196px] h-[139px]" src="/public/4d581a4123b5c8ee6f56852c1e0f6201b67eba80.png" />
+                    
+                    <h1 class="text-neutral-50 text-5xl md:text-7xl font-normal font-quantify leading-tight">
+                        Your Favorite Meal is just 1 Tap Away
+                    </h1>
+                    
+                    <p class="text-neutral-50 text-lg md:text-xl font-normal font-quantify">
+                        Your favorite meal is only a single tap away, ready to be delivered to your doorstep with just a click!
+                    </p>
+                    <div class="flex items-center space-x-5">
+                        <div class="bg-white px-4 py-1 rounded-lg flex items-center gap-4 cursor-pointer">
+                            <img src="" alt="">
+                            <div class="font-bold font-poppins">
+                                <p class="text-xs">Available on the</p>
+                                <p class="text-xl">App Store</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-white px-4 py-1 rounded-lg flex items-center gap-4 cursor-pointer">
-                        <img src="" alt="">
-                        <div class="font-bold font-poppins flex flex-col">
-                            <p class="text-xs uppercase">Get it On</p>
-                            <p class="text-xl">Google Play</p>
+                        <div class="bg-white px-4 py-1 rounded-lg flex items-center gap-4 cursor-pointer">
+                            <img src="" alt="">
+                            <div class="font-bold font-poppins flex flex-col">
+                                <p class="text-xs uppercase">Get it On</p>
+                                <p class="text-xl">Google Play</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="mt-10 md:mt-0">
+                    <img 
+                        src="/public/phonebgremoved.png" 
+                        class=""
+                        alt="Phone"
+                    >
+                </div>
             </div>
-            <div class="mt-10 md:mt-0">
-                <img 
-                    src="/public/phonebgremoved.png" 
-                    class=""
-                    alt="Phone"
-                >
-            </div>
-
-        </div>
         </section>
 
         <section class="w-full py-10">
@@ -406,9 +390,10 @@
                 </div>
 
                 <div class="relative w-full flex flex-col md:flex-row">
-                    <div>
+                    <div class="w-full md:w-1/5">
                         <h1 class="text-orange-300 text-4xl md:text-6xl font-bebas_neus">
-                            Related News
+                            Latest <br>
+                             News
                         </h1>
                         <div class="flex items-center gap-3 cursor-pointer">
                             <h1 class="text-neutral-50 text-lg md:text-lg font-poppins">View All News</h1>
@@ -417,10 +402,10 @@
                     </div>
                     <div id="scrollContainer" 
                         class="scroll-container md:w-4/5 overflow-x-auto overflow-y-hidden scrollbar-hide 
-                        snap-x snap-mandatory flex gap-6 p-2 md:p-4 scroll-smooth">
+                        snap-x snap-mandatory flex gap-6 p-2 md:p-4 scroll-smooth w-full">
 
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news1.png" />
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news1.png" />
                             <div class="flex flex-col gap-2">
                                 <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">AN ICON’S JOURNEY TO INDIE FILM</h2>
                                 <p class="text-white text-lg font-poppins">Black Film Wire Press Release – MAY 2025</p>
@@ -429,7 +414,7 @@
 
                         <!-- CARD 2 -->
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news2.png" />
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news2.png" />
                             <div class="flex flex-col gap-2">
                                 <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">BREAKING BOUNDARIES</h2>
                                 <p class="text-white text-lg font-poppins">Anuoluwapo Lebi for Culture HQ</p>
@@ -438,7 +423,7 @@
 
                         <!-- CARD 3 -->
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news3.png" />
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news3.png" />
                             <div class="flex flex-col gap-2">
                                 <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">IN CONVERSATION</h2>
                                 <p class="text-white text-lg font-poppins">
@@ -449,7 +434,7 @@
 
                         <!-- CARD 4 -->
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news4.png" />
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news4.png" />
                             <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
                                 Omotola Jalade Ekeinde on 30 Years of Impact: A Global Storyteller
                             </h2>
@@ -457,7 +442,7 @@
 
                         <!-- CARD 5 -->
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news5.png" />
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news5.png" />
                             <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
                                 Behind the Scenes: First Look at the Set of 'RR'
                             </h2>
@@ -547,27 +532,26 @@
             </div>
         </section>
         </div>
-
     </main>
     
     <footer class="w-full py-16 border-t border-orange-300 flex flex-col items-center gap-8 px-4 text-center">
 
         <div class="flex flex-wrap justify-center items-center gap-6">
-            <div class="text-white text-sm font-normal font-poppins">About Us</div>
-            <div class="text-white text-sm font-normal font-poppins">Contact Us</div>
+            <a href="about.html" class="text-white text-sm font-normal font-poppins">About Us</a>
+            <a href="contact.html" class="text-white text-sm font-normal font-poppins">Contact Us</a>
         </div>
 
-        <div class="flex flex-wrap justify-center items-center gap-4 max-w-4xl">
+        <!-- <div class="flex flex-wrap justify-center items-center gap-4 max-w-4xl">
             <div class="text-white text-sm font-normal font-poppins">Terms of Use</div>
             <div class="text-white text-sm font-normal font-poppins">Privacy Policy</div>
             <div class="text-white text-sm font-normal font-poppins">Your Privacy Rights</div>
             <div class="text-white text-sm font-normal font-poppins">Children’s Online Privacy Policy</div>
             <div class="text-white text-sm font-normal font-poppins">Interest-Based Ads</div>
-        </div>
+        </div> -->
 
-        <div class="text-white text-sm font-normal font-poppins">
+        <!-- <div class="text-white text-sm font-normal font-poppins">
             Do Not Sell My Information
-        </div>
+        </div> -->
 
         <div class="flex flex-wrap justify-center items-center gap-8 text-xl text-white">
             <i class="fa-brands fa-instagram"></i>

@@ -10,77 +10,77 @@
 </head>
 <body class="bg-zinc-900">
     <header class="fixed top-2 left-0 w-full z-50 px-4 md:px-10 font-poppins">
-    <div
-        id="navbar"
-        class="bg-zinc-900/90 backdrop-blur-md rounded-lg
-            outline outline-1 outline-orange-300/10
-            transition-[max-height] duration-500 ease-in-out overflow-hidden md:overflow-visible"
-        style="max-height: 95px"
-    >
+        <div
+            id="navbar"
+            class="bg-zinc-900/90 backdrop-blur-md rounded-lg
+                outline outline-1 outline-orange-300/10
+                transition-[max-height] duration-500 ease-in-out overflow-hidden md:overflow-visible"
+            style="max-height: 95px"
+        >
 
-        <div class="flex justify-between items-center px-4 ">
-            <a href="index.html">
-                <img src="/public/img124.png" class="w-16" />
-            </a>
+            <div class="flex justify-between items-center px-4 ">
+                <a href="index.html">
+                    <img src="/public/img124.png" class="w-16" />
+                </a>
 
-            <button id="menuBtn" class="md:hidden text-white text-2xl">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+                <button id="menuBtn" class="md:hidden text-white text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-            <nav class="hidden md:flex text-sm">
-                <ul class="flex items-center text-white gap-10 uppercase">
-                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="films.html">Films</a></li>
-                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="news.html">News</a></li>
-                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="legacy.html">30 Years legacy</a></li>
-                    <li class="relative group">
-                        <a class="hover:text-orange-300 transition-all duration-200 flex items-center gap-2" 
-                            id="othersBtn" 
-                            aria-expanded="false"
-                            href="#">Others <span class="text-sm pl-2"><i class="fa-solid fa-chevron-down"></i></span>
-                        </a>
-                        <div
-                            id="othersDropdown"
-                            class="absolute top-full mt-4 left-2/5 -translate-x-1/2 w-[230px] px-5 py-5 rounded-xl outline outline-4 outline-orange-300 bg-zinc-900/90
-                                backdrop-blur-xl border border-orange-300 shadow-[0_8px_32px_rgba(0,0,0,0.35)] invisible group-hover:opacity-100 group-hover:visible
-                                transition-all duration-300 z-[999px]">
-                            <div class="relative text-neutral-50 text-base font-normal font-poppins leading-relaxed">
-                                <a href="" class="hover:text-orange-300 transition-all duration-200">OYEP</a>  <br><br>
-                                <a href="" class="hover:text-orange-300 transition-all duration-200">OSEAL</a>  <br><br>
-                                <a href="" class="hover:text-orange-300 transition-all duration-200">TEFFEST</a> <br><br>
-                                <a href="" class="hover:text-orange-300 transition-all duration-200">DOUBLE DOORS</a>
+                <nav class="hidden md:flex text-sm">
+                    <ul class="flex items-center text-white gap-10 uppercase">
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="films.html">Films</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="news.html">News</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="legacy.html">30 Years legacy</a></li>
+                        <li class="relative group">
+                            <a class="hover:text-orange-300 transition-all duration-200 flex items-center gap-2" 
+                                id="othersBtn" 
+                                aria-expanded="false"
+                                href="#">Others <span class="text-sm pl-2"><i class="fa-solid fa-chevron-down"></i></span>
+                            </a>
+                            <div
+                                id="othersDropdown"
+                                class="absolute top-full mt-4 left-2/5 -translate-x-1/2 w-[230px] px-5 py-5 rounded-xl outline outline-4 outline-orange-300 bg-zinc-900/90
+                                    backdrop-blur-xl border border-orange-300 shadow-[0_8px_32px_rgba(0,0,0,0.35)] invisible group-hover:opacity-100 group-hover:visible
+                                    transition-all duration-300 z-[999px]">
+                                <div class="relative text-neutral-50 text-base font-normal font-poppins leading-relaxed">
+                                    <a href="" class="hover:text-orange-300 transition-all duration-200">OYEP</a>  <br><br>
+                                    <a href="" class="hover:text-orange-300 transition-all duration-200">OSEAL</a>  <br><br>
+                                    <a href="" class="hover:text-orange-300 transition-all duration-200">TEFFEST</a> <br><br>
+                                    <a href="" class="hover:text-orange-300 transition-all duration-200">DOUBLE DOORS</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="about.html">About</a></li>
-                    <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="contact.html">Contact</a></li>
+                        </li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="about.html">About</a></li>
+                        <li class="hover:text-orange-300 transition-all ease-out duration-200"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav id="mobileMenu" class="md:hidden px-4 pb-6 h-full">
+                <ul class="flex flex-col text-white gap-y-3 uppercase p-6 border-t border-orange-300/10">
+                        <li class=""><a href="films.html" class="hover:text-orange-300 transition-all ease-out duration-200">Films</a></li>
+                        <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="news.html">News</a></li>
+                        <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="legacy.html">30 Years legacy</a></li>
+                        <li class=""><button class="hover:text-orange-300 transition-all ease-out duration-200" id="othersToggle">OTHERS <span class="text-sm"><i id="othersIcon" class="fa-solid fa-chevron-down transition-transform duration-300"></i></span></button>
+                            <ul
+                                id="othersAccordion"
+                                class="mt-1 ml-4 space-y-3 text-sm
+                                    max-h-0 overflow-hidden
+                                    transition-all duration-300"
+                            >
+                                <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OYEP</a></li>
+                                <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OSEAL</a></li>
+                                <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">TEFFEST</a></li>
+                                <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">Double Doors</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="about.html">About</a></li>
+                        <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
         </div>
-
-        <nav id="mobileMenu" class="md:hidden px-4 pb-6 h-full">
-            <ul class="flex flex-col text-white gap-y-3 uppercase p-6 border-t border-orange-300/10">
-                    <li class=""><a href="films.html" class="hover:text-orange-300 transition-all ease-out duration-200">Films</a></li>
-                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="news.html">News</a></li>
-                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="legacy.html">30 Years legacy</a></li>
-                    <li class=""><button class="hover:text-orange-300 transition-all ease-out duration-200" id="othersToggle">OTHERS <span class="text-sm"><i id="othersIcon" class="fa-solid fa-chevron-down transition-transform duration-300"></i></span></button>
-                        <ul
-                            id="othersAccordion"
-                            class="mt-1 ml-4 space-y-3 text-sm
-                                max-h-0 overflow-hidden
-                                transition-all duration-300"
-                        >
-                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OYEP</a></li>
-                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OSEAL</a></li>
-                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">TEFFEST</a></li>
-                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">Double Doors</a></li>
-                        </ul>
-                    </li>
-                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="about.html">About</a></li>
-                    <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-    </div>
     </header> 
     <main class="md:px-14 px-6 py-10 mt-24 space-y-10">
         <section class="py-16 flex flex-col md:flex-row items-center gap-8">
@@ -98,128 +98,180 @@
         </div>
         </section>
 
-        <section class="max-w-[1172px] mx-auto px-4 py-16">
-        <h2 class="text-orange-300 text-5xl md:text-6xl w-1/2 font-bebas_neus mb-16">
-            CAREER MILESTONES: THE ICONIC TIMELINE
-        </h2>
+        <section class="max-full mx-auto py-16">
+            <h2 class="text-orange-300 text-5xl md:text-6xl w-1/2 font-bebas_neus mb-16">
+                CAREER MILESTONES: THE ICONIC TIMELINE
+            </h2>
 
-        <div class="relative w-4/5">
-            <div class="absolute left-4 top-0 bottom-0 w-1 bg-orange-300"></div>
+            <div class="relative w-4/5">
+                <div class="absolute left-4 top-0 bottom-0 w-1 bg-orange-300"></div>
 
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">1995</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>The Debut:</strong> Enters Nollywood with her first film, <em>Venom of Justice</em>.
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">1995</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>The Debut:</strong> Enters Nollywood with her first film, <em>Venom of Justice</em>.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">1996</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>The Breakthrough:</strong> Stars in the critically acclaimed <em>Mortal Inheritance</em>. Wins Best Actress Overall at THEMA 1997.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2003</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>The Dominance:</strong> Cemented as a major force with blockbuster hits like <em>Blood Sisters</em>.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2005</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>The Humanitarian Pivot:</strong> Becomes WFP Goodwill Ambassador and launches debut album <em>GBA</em>.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2010</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>The Global Film:</strong> Co-stars in <em>Ije: The Journey</em>, the highest-grossing Nollywood film at the time.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2012</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>Reality TV Pioneer:</strong> Launches Nigeria's first reality show, <em>Omotola: The Real Me</em>.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2013</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>TIME 100 Global Icon:</strong> First Nigerian actress named in TIME Magazine’s 100 Most Influential People.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2014</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>National Honor:</strong> Conferred with Member of the Order of the Federal Republic (MFR) by the Nigerian government.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2017</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>The Cinematic Resurgence:</strong> Wins AMVCA Best Actress for <em>Alter Ego</em>.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2018</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>The Oscars Invitation:</strong> Invited to join the Academy of Motion Picture Arts and Sciences.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2019</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>The Entrepreneur:</strong> Founds TEFFEST, empowering the African creative economy.
+                </div>
+                </article>
+
+                <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
+                <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
+                <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2025</time>
+                <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
+                    <strong>Three Decades of Impact:</strong> Celebrates 30 years in entertainment and leads Nollywood’s global integration via <em>Redhot Concepts</em>.
+                </div>
+                </article>
             </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">1996</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>The Breakthrough:</strong> Stars in the critically acclaimed <em>Mortal Inheritance</em>. Wins Best Actress Overall at THEMA 1997.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2003</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>The Dominance:</strong> Cemented as a major force with blockbuster hits like <em>Blood Sisters</em>.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2005</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>The Humanitarian Pivot:</strong> Becomes WFP Goodwill Ambassador and launches debut album <em>GBA</em>.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2010</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>The Global Film:</strong> Co-stars in <em>Ije: The Journey</em>, the highest-grossing Nollywood film at the time.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2012</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>Reality TV Pioneer:</strong> Launches Nigeria's first reality show, <em>Omotola: The Real Me</em>.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2013</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>TIME 100 Global Icon:</strong> First Nigerian actress named in TIME Magazine’s 100 Most Influential People.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2014</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>National Honor:</strong> Conferred with Member of the Order of the Federal Republic (MFR) by the Nigerian government.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2017</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>The Cinematic Resurgence:</strong> Wins AMVCA Best Actress for <em>Alter Ego</em>.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2018</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>The Oscars Invitation:</strong> Invited to join the Academy of Motion Picture Arts and Sciences.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2019</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>The Entrepreneur:</strong> Founds TEFFEST, empowering the African creative economy.
-            </div>
-            </article>
-
-            <article class="relative flex flex-col md:flex-row md:items-start mb-16 pl-12 md:pl-16">
-            <div class="absolute left-2.5 w-4 h-4 bg-orange-300 rounded-full top-2 md:top-3"></div>
-            <time class="text-white text-xl  font-poppins font-bold flex-shrink-0 md:w-24">2025</time>
-            <div class="mt-2 md:mt-0 text-white text-lg  font-poppins">
-                <strong>Three Decades of Impact:</strong> Celebrates 30 years in entertainment and leads Nollywood’s global integration via <em>Redhot Concepts</em>.
-            </div>
-            </article>
-        </div>
         </section>
 
-        <section class="w-full py-10 " aria-label="Image Gallery">
-            <div class="relative">
-                <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-black/40 text-white rounded-full flex items-center justify-center">
+        <section class="w-full py-16" aria-label="Image Gallery">
+            <div class="relative  mx-auto px-6">
+
+                <button
+                id="scrollLeft"
+                aria-label="Scroll left"
+                class="absolute -left-2 md:-left-6 top-1/2 -translate-y-1/2 z-20
+                        w-10 h-10 md:w-12 md:h-12
+                        bg-black/50 hover:bg-black text-white
+                        rounded-full flex items-center justify-center transition"
+                >
                 <i class="fa-solid fa-chevron-left"></i>
                 </button>
 
-                <div id="gallery" class="overflow-x-auto flex gap-4 md:gap-6 snap-x snap-mandatory scroll-smooth scrollbar-hide">
-                <img class="w-56 md:w-72 h-[639px] md:h-[639px] object-cover border-4 border-orange-300 flex-shrink-0 snap-start" src="/public/legacy1.png" alt="Gallery Image 1" />
-                <img class="w-56 md:w-72 h-[742px] md:h-[742px] object-cover border-4 border-orange-300 flex-shrink-0 snap-start" src="/public/legacy2.png" alt="Gallery Image 2" />
-                <img class="w-56 md:w-72 h-[742px] md:h-[742px] object-cover border-4 border-orange-300 flex-shrink-0 snap-start" src="/public/legacy3.png" alt="Gallery Image 3" />
-                <img class="w-56 md:w-72 h-[639px] md:h-[639px] object-cover border-4 border-orange-300 flex-shrink-0 snap-start" src="/public/legacy4.png" alt="Gallery Image 4" />
+               
+                <div
+                id="gallery"
+                class="flex gap-6 overflow-x-auto scroll-smooth items-center snap-x snap-mandatory
+                        scrollbar-hide"
+                >
+
+                
+                <figure class="min-w-full sm:min-w-[70%] md:min-w-[25%] snap-start">
+                    <img
+                    src="/public/legacy1.png"
+                    alt="Legacy image 1"
+                    class="w-full h-[420px] md:h-[640px] object-cover object-[center_0%] border-4 border-orange-300"
+                    />
+                </figure>
+
+                <figure class="min-w-full sm:min-w-[70%] md:min-w-[25%] snap-start">
+                    <img
+                    src="/public/legacy2.png"
+                    alt="Legacy image 2"
+                    class="w-full h-[460px] md:h-[680px] object-cover object-[center_0%] border-4 border-orange-300"
+                    />
+                </figure>
+
+                <figure class="min-w-full sm:min-w-[70%] md:min-w-[25%] snap-start">
+                    <img
+                    src="/public/legacy3.png"
+                    alt="Legacy image 3"
+                    class="w-full h-[460px] md:h-[680px] object-cover object-[center_0%] border-4 border-orange-300"
+                    />
+                </figure>
+
+                <figure class="min-w-full sm:min-w-[70%] md:min-w-[25%] snap-start">
+                    <img
+                    src="/public/legacy4.png"
+                    alt="Legacy image 4"
+                    class="w-full h-[420px] md:h-[640px] object-cover object-[center_0%] border-4 border-orange-300"
+                    />
+                </figure>
+
                 </div>
 
-                <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-black/40 text-white rounded-full flex items-center justify-center">
+                <!-- Right Button -->
+                <button
+                id="scrollRight"
+                aria-label="Scroll right"
+                class="absolute -right-2 md:-right-6 top-1/2 -translate-y-1/2 z-20
+                        w-10 h-10 md:w-12 md:h-12
+                        bg-black/50 hover:bg-black text-white
+                        rounded-full flex items-center justify-center transition"
+                >
                 <i class="fa-solid fa-chevron-right"></i>
                 </button>
+
             </div>
         </section>
 
@@ -235,7 +287,7 @@
         </section>
 
         <section class="w-full  py-10" aria-labelledby="activist-title">
-            <div class="max-w-6xl mx-auto flex flex-col gap-6">
+            <div class="mx-auto flex flex-col gap-6">
 
                 <h2 id="activist-title" class="text-orange-300 text-2xl md:text-4xl font-bold font-poppins">
                 The Activist and Philanthropist
@@ -269,7 +321,7 @@
         </section>
 
         <section class="w-full  py-10" aria-labelledby="press-media-title">
-            <div class="max-w-6xl mx-auto flex flex-col gap-6">
+            <div class="mx-auto flex flex-col gap-6">
 
                 <h2 id="press-media-title" class="text-orange-300 text-2xl md:text-4xl font-bold font-poppins">
                 Press, Media & Cultural Archive
@@ -484,9 +536,10 @@
                 </div>
 
                 <div class="relative w-full flex flex-col md:flex-row">
-                    <div>
+                    <div class="w-full md:w-1/5">
                         <h1 class="text-orange-300 text-4xl md:text-6xl font-bebas_neus">
-                            Latest News
+                            Latest <br>
+                             News
                         </h1>
                         <div class="flex items-center gap-3 cursor-pointer">
                             <h1 class="text-neutral-50 text-lg md:text-lg font-poppins">View All News</h1>
@@ -495,28 +548,30 @@
                     </div>
                     <div id="scrollContainer" 
                         class="scroll-container md:w-4/5 overflow-x-auto overflow-y-hidden scrollbar-hide 
-                        snap-x snap-mandatory flex gap-6 p-2 md:p-4 scroll-smooth">
+                        snap-x snap-mandatory flex gap-6 p-2 md:p-4 scroll-smooth w-full">
 
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news1.png" />
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news1.png" />
                             <div class="flex flex-col gap-2">
-                                <h2 class="text-orange-300 text-lg md:text-3xl font-bold">AN ICON’S JOURNEY TO INDIE FILM</h2>
+                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">AN ICON’S JOURNEY TO INDIE FILM</h2>
                                 <p class="text-white text-lg font-poppins">Black Film Wire Press Release – MAY 2025</p>
                             </div>
                         </div>
 
+                        <!-- CARD 2 -->
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news2.png" />
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news2.png" />
                             <div class="flex flex-col gap-2">
-                                <h2 class="text-orange-300 text-lg md:text-3xl font-bold">BREAKING BOUNDARIES</h2>
+                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">BREAKING BOUNDARIES</h2>
                                 <p class="text-white text-lg font-poppins">Anuoluwapo Lebi for Culture HQ</p>
                             </div>
                         </div>
 
+                        <!-- CARD 3 -->
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news3.png" />
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news3.png" />
                             <div class="flex flex-col gap-2">
-                                <h2 class="text-orange-300 text-lg md:text-3xl font-bold">IN CONVERSATION</h2>
+                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">IN CONVERSATION</h2>
                                 <p class="text-white text-lg font-poppins">
                                     The Artistic Vision Behind Mother’s Love – USC Annenberg – MAY 2025
                                 </p>
@@ -525,16 +580,16 @@
 
                         <!-- CARD 4 -->
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news4.png" />
-                            <h2 class="text-white text-lg md:text-3xl font-bold font-poppins">
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news4.png" />
+                            <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
                                 Omotola Jalade Ekeinde on 30 Years of Impact: A Global Storyteller
                             </h2>
                         </div>
 
                         <!-- CARD 5 -->
                         <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-full h-72 md:h-96 object-cover rounded-lg" src="public/news5.png" />
-                            <h2 class="text-white text-lg md:text-3xl font-bold font-poppins">
+                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news5.png" />
+                            <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
                                 Behind the Scenes: First Look at the Set of 'RR'
                             </h2>
                         </div>
@@ -547,21 +602,21 @@
     <footer class="w-full py-16 border-t border-orange-300 flex flex-col items-center gap-8 px-4 text-center">
 
         <div class="flex flex-wrap justify-center items-center gap-6">
-            <div class="text-white text-sm font-normal text-lg font-poppins font-poppins">About Us</div>
-            <div class="text-white text-sm font-normal text-lg font-poppins font-poppins">Contact Us</div>
+            <a href="about.html" class="text-white text-sm font-normal font-poppins">About Us</a>
+            <a href="contact.html" class="text-white text-sm font-normal font-poppins">Contact Us</a>
         </div>
 
-        <div class="flex flex-wrap justify-center items-center gap-4 max-w-4xl">
-            <div class="text-white text-sm font-normal text-lg font-poppins font-poppins">Terms of Use</div>
-            <div class="text-white text-sm font-normal text-lg font-poppins font-poppins">Privacy Policy</div>
-            <div class="text-white text-sm font-normal text-lg font-poppins font-poppins">Your Privacy Rights</div>
-            <div class="text-white text-sm font-normal text-lg font-poppins font-poppins">Children’s Online Privacy Policy</div>
-            <div class="text-white text-sm font-normal text-lg font-poppins font-poppins">Interest-Based Ads</div>
-        </div>
+        <!-- <div class="flex flex-wrap justify-center items-center gap-4 max-w-4xl">
+            <div class="text-white text-sm font-normal font-poppins">Terms of Use</div>
+            <div class="text-white text-sm font-normal font-poppins">Privacy Policy</div>
+            <div class="text-white text-sm font-normal font-poppins">Your Privacy Rights</div>
+            <div class="text-white text-sm font-normal font-poppins">Children’s Online Privacy Policy</div>
+            <div class="text-white text-sm font-normal font-poppins">Interest-Based Ads</div>
+        </div> -->
 
-        <div class="text-white text-sm font-normal text-lg font-poppins font-poppins">
+        <!-- <div class="text-white text-sm font-normal font-poppins">
             Do Not Sell My Information
-        </div>
+        </div> -->
 
         <div class="flex flex-wrap justify-center items-center gap-8 text-xl text-white">
             <i class="fa-brands fa-instagram"></i>
@@ -571,7 +626,7 @@
             <i class="fa-brands fa-whatsapp"></i>
         </div>
 
-        <div class="text-white text-sm font-normal text-lg font-poppins font-poppins">
+        <div class="text-white text-sm font-normal font-poppins">
             ©2025 Redhot Concept. All Rights Reserved.
         </div>
     </footer>
@@ -745,4 +800,21 @@ setInterval(() => {
     if (e.target === modal) closeModal();
   });
 </script>
+
+<script>
+  const gallery = document.getElementById("gallery");
+  const scrollLeftBtn = document.getElementById("scrollLeft");
+  const scrollRightBtn = document.getElementById("scrollRight");
+
+  const scrollAmount = () => gallery.clientWidth * 0.8;
+
+  scrollLeftBtn.addEventListener("click", () => {
+    gallery.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+  });
+
+  scrollRightBtn.addEventListener("click", () => {
+    gallery.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+  });
+</script>
+
 </html>
