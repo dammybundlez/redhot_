@@ -43,10 +43,10 @@
                                 backdrop-blur-xl border border-orange-300 shadow-[0_8px_32px_rgba(0,0,0,0.35)] invisible group-hover:opacity-100 group-hover:visible
                                 transition-all duration-300 z-[999px]">
                             <div class="relative text-neutral-50 text-base font-normal font-poppins leading-relaxed">
-                                <a href="" class="hover:text-orange-300 transition-all duration-200">OYEP</a>  <br><br>
-                                <a href="" class="hover:text-orange-300 transition-all duration-200">OSEAL</a>  <br><br>
-                                <a href="" class="hover:text-orange-300 transition-all duration-200">TEFFEST</a> <br><br>
-                                <a href="" class="hover:text-orange-300 transition-all duration-200">DOUBLE DOORS</a>
+                                <a href="https://red-hot.vercel.app/Oyep.html" class="hover:text-orange-300 transition-all duration-200">OYEP</a>  <br><br>
+                                <a href="https://red-hot.vercel.app/Oseal.html" class="hover:text-orange-300 transition-all duration-200">OSEAL</a>  <br><br>
+                                <a href="https://www.teffest.com/" class="hover:text-orange-300 transition-all duration-200">TEFFEST</a> <br><br>
+                                <a href="https://red-hot.vercel.app/Doubledoors.html" class="hover:text-orange-300 transition-all duration-200">DOUBLE DOORS</a>
                             </div>
                         </div>
                     </li>
@@ -68,10 +68,10 @@
                                 max-h-0 overflow-hidden
                                 transition-all duration-300"
                         >
-                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OYEP</a></li>
-                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OSEAL</a></li>
-                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">TEFFEST</a></li>
-                            <li><a class="hover:text-orange-300 transition-all ease-out duration-200" href="#">Double Doors</a></li>
+                            <li><a href="https://red-hot.vercel.app/Oyep.html" class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OYEP</a></li>
+                            <li><a href="https://red-hot.vercel.app/Oseal.html" class="hover:text-orange-300 transition-all ease-out duration-200" href="#">OSEAL</a></li>
+                            <li><a href="https://www.teffest.com/" class="hover:text-orange-300 transition-all ease-out duration-200" href="#">TEFFEST</a></li>
+                            <li><a href="https://red-hot.vercel.app/Doubledoors.html" class="hover:text-orange-300 transition-all ease-out duration-200" href="#">Double Doors</a></li>
                         </ul>
                     </li>
                     <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="about.html">About</a></li>
@@ -108,11 +108,9 @@
     <main class="md:px-14 px-6 py-10 space-y-10">
 
         <div class="flex flex-col md:flex-row justify-between gap-6">
-            
-            <!-- Search -->
             <div class="relative w-full md:w-1/3">
-                <input type="text"
-                    class="w-full bg-white/10 rounded-full px-5 py-3 text-white font-poppins placeholder-white/50"
+                <input type="text" id="searchInput"
+                    class="w-full bg-white/10 rounded-full px-5 py-3 active:bg-black text-white font-poppins placeholder-white/50"
                     placeholder="Search">
 
                 <button class="p-3 absolute right-2 top-1/2 -translate-y-1/2">
@@ -131,8 +129,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
+        <div id="cardGrid" class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="flex flex-col gap-4">
                 <div class="relative">
                     <img src="public/herobg.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
@@ -142,7 +139,7 @@
                         <p class="text-white text-xs font-poppins">FILM FESTIVAL PRESS KIT</p>
                     </div>
                 </div>
-                <p class="text-white text-lg font-poppins">A Mother's Love</p>
+                <p class="text-white text-lg font-poppins"></p>
             </div>
 
             <div class="flex flex-col gap-4">
@@ -155,90 +152,6 @@
                     </div>
                 </div>
                 <p class="text-white text-lg font-poppins">RR</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film3.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Rattle Snake</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film4.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Alter Ego</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film5.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Blood Sister</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film6.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Ije: The Journey</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film7.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">LAst Flight To Abuja</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film8.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Last Flight To Abuja</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <div class="relative">
-                    <img src="public/herobg.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                    <div class="absolute bottom-4 left-0 right-0 text-center space-y-1">
-                        <p class="text-orange-300 text-xl font-bebas_neus">A Mother’s Love</p>
-                        <p class="text-white text-xs font-poppins">A MOVIE INSPIRED BY TRUE EVENT</p>
-                        <p class="text-white text-xs font-poppins">FILM FESTIVAL PRESS KIT</p>
-                    </div>
-                </div>
-                <p class="text-white text-lg font-poppins">Rattle Snake</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <div class="relative">
-                    <img src="public/aboutHero.png" class="w-full h-[300px] brightness-75 md:h-[454px] object-cover rounded">
-                    <div class="absolute bottom-4 left-0 right-0 text-center space-y-1">
-                        <p class="text-white text-xl font-bebas_neus">RR</p>
-                        <p class="text-white text-xs font-poppins">A MOVIE INSPIRED BY TRUE EVENT</p>
-                        <p class="text-white text-xs font-poppins">FILM FESTIVAL PRESS KIT</p>
-                    </div>
-                </div>
-                <p class="text-white text-lg font-poppins">RR</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film3.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Rattle Snake</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film4.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Alter Ego</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film5.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Blood Sister</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film6.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Ije: The Journey</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film7.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">LAst Flight To Abuja</p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <img src="public/film8.png" class="w-full h-[300px] md:h-[454px] object-cover rounded">
-                <p class="text-white text-lg font-poppins">Last Flight To Abuja</p>
             </div>
         </div>
 
@@ -464,6 +377,97 @@ setInterval(() => {
   updateSlide(currentIndex);
 }, 5000);
 
+</script>
+
+
+<!-- search qury -->
+<script>
+const cards = [
+  {
+    name: "A Mother's Love",
+    image: "/public/herobg.png",
+    keywords: ["Mother", "Love", "Drama"]
+  },
+  {
+    name: "Road Rogue",
+    image: "/public/aboutHero.png",
+    keywords: ["rogue", "rogue" , "action"]
+  },
+  {
+    name: "Rattle Snake",
+    image: "/public/film3.png",
+    keywords: ["snake", "rattle" , "action"]
+  },
+  {
+    name: "Alter Ego",
+    image: "/public/film4.png",
+    keywords: ["crime", "betrayal" , "drama"]
+  },
+  {
+    name: "Blood Sister",
+    image: "/public/film5.png",
+    keywords: ["sister", "betrayal" , "drama"]
+  },
+  {
+    name: "Ije: The Journey",
+    image: "/public/film6.png",
+    keywords: ["drama", "journry" , "love"]
+  },
+  {
+    name: "Last Flight to Abuja",
+    image: "/public/film7.png",
+    keywords: ["drama", "action" , "flight"]
+  },
+  {
+    name: "The Ties That Binds ",
+    image: "/public/film8.png",
+    keywords: ["love", "friendship" , "drama"]
+  },
+];
+
+const input = document.getElementById("searchInput");
+const grid = document.getElementById("cardGrid");
+
+function filterCards(query) {
+  if (!query) return cards;
+
+  const q = query.toLowerCase();
+  return cards
+    .filter(card =>
+      card.name.toLowerCase().includes(q) ||
+      card.keywords.some(k => k.toLowerCase().includes(q))
+    )
+    .slice(0, 8);
+}
+
+function renderCards(list) {
+  grid.innerHTML = "";
+
+  list.forEach(card => {
+    const el = document.createElement("div");
+    el.className =
+      "transition overflow-hidden";
+
+    el.innerHTML = `
+      <img
+        src="${card.image}"
+        alt="${card.name}"
+        class="w-full h-[200px] md:h-[300px] object-cover rounded"
+      />
+      <div class="mt-2 text-left font-semibold text-white text-poppins text-lg">
+        ${card.name}
+      </div>
+    `;
+
+    grid.appendChild(el);
+  });
+}
+
+renderCards(cards);
+
+input.addEventListener("input", e => {
+  renderCards(filterCards(e.target.value.trim()));
+});
 </script>
 
 <!-- desktop other dropdown click -->

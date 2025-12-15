@@ -6,37 +6,77 @@
     <link rel="stylesheet" href="output.css">
     <script src="https://kit.fontawesome.com/c4993cb090.js" crossorigin="anonymous"></script>
     <title>Document</title>
-</head>
-<body class="bg-zinc-900">
-    <div class="relative h-screen w-full">
-      <img src="public/Frame25.png" class="object-cover" alt="">
 
-      <div class="absolute top-20 flex flex-col items-center w-full gap-5">
-        <div class="flex flex-col items-center w-full gap-5">
-          <h1 class="text-white md:text-5xl text-3xl font-bold p-5 uppercase font-bebas_neus">Omotola Jalade-Ekeinde</h1>
-          <div class="flex gap-x-5">
-            <img src="public/3.png" class="w-40" alt="">
-            <img src="public/0.png" class="w-40" alt="">
-          </div>
-          <h1 class="text-white md:text-5xl text-3xl font-bold p-5 uppercase font-bebas_neus">Years ANNIVERSARY</h1>
+    <style>
+  .slide-img {
+    width: 300px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 768px) {
+    .slide-img {
+      width: 420px;
+      height: 600px;
+    }
+  }
+
+  .control-btn {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 9999px;
+    font-size: 18px;
+  }
+</style>
+
+</head>
+<body class="bg-white">
+<section class="relative w-full min-h-screen overflow-hidden">
+        <img
+            src="public/Frame25.png"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div class="relative z-10 flex flex-col items-center justify-center min-h-screen py-10 px-6 md:px-16 gap-12">
+
+            <div class="flex flex-col items-center justify-center gap-6 text-center">
+              <div class="flex gap-4">
+                  <img src="public/3.png" class="w-24 md:w-40 animate-softBounce" alt="" />
+                  <img src="public/0.png" class="w-24 md:w-40 animate-softBounceDelay" alt="" />
+              </div>
+              <div class="-mt-52 z-50 text-center flex items-center justify-center">
+                <img src="public/Years Legacy.png" class="h-4/5 w-3/5" alt="" srcset="">
+              </div>
+            </div>
+            <p class="inline-block text-white font-poppins uppercase">
+                EST 1995
+            </p>
         </div>
-        <div class="flex flex-col items-center justify-center w-full gap-10">
-          <h3 class="text-[#121212] uppercase text-3xl font-bebas_neus font-semibold">Three decades of excellence</h3>
-          <p class="text-[#121212] w-1/2 text-center text-sm font-normal font-poppins">From groundbreaking performances to global humanitarian impact, explore the remarkable journey of Omotola Jalade Ekeinde—Africa's cinematic icon and cultural pioneer. </p>
-          <div class="flex items-center justify-between px-16 gap-5">
-            <div class="w-[30%]">
-              <img src="public/8.png" alt="">
-            </div>
-             <div class="w-[30%]">
-              <img src="public/974ad290a6dc6f6ce31ad8ffe78c00d70e20fcd4.jpg" alt="">
-            </div>
-             <div class="w-[30%]">
-              <img src="public/omot.png" alt="">
-            </div>
-          </div>
-          <p class="text-[#C9A464] border-[#C9A464] border-4 px-3 py-2 font-bold ">EXPLORE 30-YEARS LEGACY</p>
-        </div>
-      </div>
-    </div>
+
+</section>
+<div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 text-center justify-center items-center gap-4 px-4 py-16">
+  <div class="w-full">
+    <img class="w-full h-[362.22px] rounded-[42px] object-cover border-4 border-orange-300" src="public/img1.png" />
+  </div>
+  <div class="">
+    <img class="w-full h-[362.22px] rounded-[42px] object-cover border-4 border-orange-300" src="public/img2.png" />
+  </div>
+  <div class="">
+    <img class="w-full h-[362.22px] rounded-[42px] object-cover border-4 border-orange-300" src="public/img333.png" />
+  </div>
+  <div class="">
+    <img class="w-full h-[362.22px] rounded-[42px] object-cover border-4 border-orange-300" src="public/img4.png" />
+  </div>
+  <div class="">
+    <img class="w-full h-[362.22px] rounded-[42px] object-cover border-4 border-orange-300" src="public/img5.png" />
+  </div>
+</div>
+
+
 </body>
 </html>
