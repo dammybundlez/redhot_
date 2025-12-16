@@ -155,9 +155,9 @@
             </div>
         </div>
 
-        <section class="w-full py-10">
-            <div class="scroll-section flex flex-col justify-between items-start gap-10 w-full">
-                <div class="w-full flex justify-end self-end items-end gap-3">       
+        <section class="w-full md:py-10 py-5">
+            <div class="scroll-section md:space-y-8">
+                <div class="flex flex-col justify-end items-end gap-10 w-full">       
                     <div class="control md:space-x-10 space-x-4 flex items-center">
                         <button  class="scroll-left md:w-12 w-8 md:h-12 h-8 text-white text-xl border-2 border-white rounded-full 
                             flex items-center justify-center bg-black/40 backdrop-blur-sm">
@@ -170,65 +170,63 @@
                     </div>
                 </div>
 
-                <div class="relative w-full flex flex-col md:flex-row">
-                    <div class="w-full md:w-1/5">
+                <div class="relative w-full flex flex-col lg:flex-row gap-5">
+                    <div class="w-full lg:w-1/5">
                         <h1 class="text-orange-300 text-4xl md:text-6xl font-bebas_neus">
-                            Latest <br>
-                             News
+                            Latest News
                         </h1>
-                        <div class="flex items-center gap-3 cursor-pointer">
+                        <a href="news.html" class="flex items-center gap-3 cursor-pointer">
                             <h1 class="text-neutral-50 text-lg md:text-lg font-poppins">View All News</h1>
                             <i class="fa-solid fa-arrow-right text-neutral-50 text-lg"></i>
-                        </div>
+                        </a>
                     </div>
                     <div id="scrollContainer" 
-                        class="scroll-container md:w-4/5 overflow-x-auto overflow-y-hidden scrollbar-hide 
+                        class="scroll-container lg:w-4/5 overflow-x-auto overflow-y-hidden scrollbar-hide 
                         snap-x snap-mandatory flex gap-6 p-2 md:p-4 scroll-smooth w-full">
 
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news1.png" />
-                            <div class="flex flex-col gap-2">
-                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">AN ICON’S JOURNEY TO INDIE FILM</h2>
-                                <p class="text-white text-lg font-poppins">Black Film Wire Press Release – MAY 2025</p>
-                            </div>
+                        <div class="min-w-[460px]  md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <a href="https://www.telegraph.co.uk/culture/film/film-news/10252949/Omosexy-The-biggest-film-star-youve-never-heard-of.html" class="flex flex-col gap-3">
+                                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/main__2647928b (1).webp" />
+                                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins uppercase line-clamp-2">'Omosexy': The biggest film star you’ve never heard of.</h3>
+                                <p class="text-white text-base md:text-base font-poppins line-clamp-2">she scores a zero on the Hollywood Richter scale. She has never starred in a major...</p>
+                            </a>
                         </div>
 
                         <!-- CARD 2 -->
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news2.png" />
-                            <div class="flex flex-col gap-2">
-                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">BREAKING BOUNDARIES</h2>
-                                <p class="text-white text-lg font-poppins">Anuoluwapo Lebi for Culture HQ</p>
-                            </div>
+                        <div class="min-w-[460px]  md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <a href="https://time100.time.com/2013/04/18/time-100/slide/omotola-jalade-ekeinde/" class="flex flex-col gap-3">
+                                <img class="w-full h-[18rem] md:h-[22rem] object-cover object-[center_0%]" src="/public/2013_time100_jalade.webp" />
+                                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins line-clamp-2 uppercase">The 2013 TIME 100</h3>
+                                <p class="text-white text-base md:text-base font-poppins line-clamp-2">The world’s most productive English-language film industry is not Hollywood but Nollywood. The teeming Nigerian cinema grinds out some 2,500 movies a year, mostly direct-to-DVD quickies mixing melodrama, music and an evangelical Christian spin. </p>
+                            </a>
                         </div>
 
                         <!-- CARD 3 -->
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news3.png" />
-                            <div class="flex flex-col gap-2">
-                                <h2 class="text-orange-300 text-2xl md:text-3xl font-bold">IN CONVERSATION</h2>
-                                <p class="text-white text-lg font-poppins">
-                                    The Artistic Vision Behind Mother’s Love – USC Annenberg – MAY 2025
-                                </p>
-                            </div>
+                        <div class="min-w-[460px]  md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <a href="https://edition.cnn.com/2014/01/17/showbiz/omotola-jalade-ekeinde-queen-nollywood" class="flex flex-col gap-3">
+                                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/news4.png" />
+                                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins uppercase line-clamp-2">Omotola Jalade-Ekeinde: 10 things to know about ‘Omosexy’</h3>
+                                <p class="text-white text-base md:text-base font-poppins line-clamp-2">Omotola Jalade-Ekeinde is known as the Queen of Nollywood, Nigeria’s booming movie industry. Since her 1995 film debut, the actress has appeared in some 300 movies, selling millions of videos and establishing herself as a Nollywood icon.</p>
+                            </a>
                         </div>
 
                         <!-- CARD 4 -->
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news4.png" />
-                            <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
-                                Omotola Jalade Ekeinde on 30 Years of Impact: A Global Storyteller
-                            </h2>
+                        <div class="min-w-[460px]  md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <a href="https://www.youtube.com/watch?v=xddCn_k5kUY" class="flex flex-col gap-3">
+                                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/OIP.webp" />
+                                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins uppercase">Omotola Wise Submit</h3>
+                                <p class="text-white text-base md:text-base font-poppins line-clamp-2">'Women should be educated in their own rights' - Omotola Jalade Ekeinde - Learning Journey</p>
+                            </a>
                         </div>
 
                         <!-- CARD 5 -->
-                        <div class="min-w-[260px] md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
-                            <img class="w-fullh-[300px] brightness-75 md:h-[454px] object-cover rounded-lg" src="public/news5.png" />
-                            <h2 class="text-white text-2xl md:text-3xl font-bold font-poppins">
-                                Behind the Scenes: First Look at the Set of 'RR'
-                            </h2>
+                        <div class="min-w-[460px]  md:min-w-[350px] lg:min-w-[420px] flex flex-col gap-5 snap-start">
+                            <a href="https://www.youtube.com/watch?v=bvGgG9c8jI0" class="flex flex-col gap-3">
+                                <img class="w-full h-[18rem] md:h-[22rem] object-cover" src="/public/award.webp" />
+                                <h3 class="text-orange-300 text-xl md:text-2xl font-bold font-poppins uppercase line-clamp-2">Omotola Jalade Receives her Honorary Film Icon BEFFTA Award </h3>
+                                <p class="text-white text-base md:text-base font-poppins line-clamp-2">"Omosexy", as she is known to her fans, expresses to us her love for depth and meaning in film, how she has blossomed within the entertainment industry, how she deals with "haters" and her forthcoming music album. </p>
+                            </a>
                         </div>
-
                     </div>
                 </div>
             </div>
