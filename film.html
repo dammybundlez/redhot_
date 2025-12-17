@@ -58,7 +58,7 @@
 
         <nav id="mobileMenu" class="md:hidden px-4 pb-6 h-full">
             <ul class="flex flex-col text-white gap-y-3 uppercase p-6 border-t border-orange-300/10">
-                    <li class=""><a href="films.html" class="hover:text-orange-300 transition-all ease-out duration-200">Films</a></li>
+                    <li class=""><a href="film.html" class="hover:text-orange-300 transition-all ease-out duration-200">Films</a></li>
                     <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="news.html">News</a></li>
                     <li class=""><a class="hover:text-orange-300 transition-all ease-out duration-200" href="legacy.html">30 Years legacy</a></li>
                     <li class=""><button class="hover:text-orange-300 transition-all ease-out duration-200" id="othersToggle">OTHERS <span class="text-sm"><i id="othersIcon" class="fa-solid fa-chevron-down transition-transform duration-300"></i></span></button>
@@ -241,281 +241,281 @@
             ©2025 Redhot Concept. All Rights Reserved.
         </div>
     </footer>
+    <script>
+      const menuBtn = document.getElementById('menuBtn');
+      const navbar = document.getElementById('navbar');
+    
+      let open = false;
+    
+      menuBtn.addEventListener('click', () => {
+        open = !open;
+    
+        if (open) {
+          navbar.style.maxHeight = '480px';
+        } else {
+          navbar.style.maxHeight = '95px'; 
+        }
+        menuBtn.innerHTML = open
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+      });
+    
+    </script>
+    
+    <script>
+    document.querySelectorAll(".scroll-section").forEach(section => {
+    
+        const container = section.querySelector(".scroll-container");
+        const leftBtn = section.querySelector(".scroll-left");
+        const rightBtn = section.querySelector(".scroll-right");
+    
+        leftBtn.addEventListener("click", () => {
+            container.scrollBy({ left: -350, behavior: "smooth" });
+        });
+    
+        rightBtn.addEventListener("click", () => {
+            container.scrollBy({ left: 350, behavior: "smooth" });
+        });
+    
+    });
+    </script>
+    
+    <!-- Hero slider -->
+    <script>
+        const slides = [
+      {
+        bg: "public/herobg.png",
+        title: "A MOTHER’S LOVE",
+        subtitle: "Now Available Only in Theaters",
+        href: "moviedetails.html"
+      },
+      {
+        bg: "public/rr.png",
+        title: "RR The Movie",
+        subtitle: "Coming To Theatres Soon",
+      },
+      {
+        bg: "public/rs.png",
+        title: "Rattle Snake",
+        subtitle: "The Entertainment Fair",
+      },
+      {
+        bg: "public/lastflight.png",
+        title: "Last Flight To Abuja",
+        subtitle: "Coming To Theatres Soon",
+      }
+    ];
+    
+    let currentIndex = 0;
+    
+    const heroBg = document.querySelector(".hero-bg");
+    const heroTitle = document.querySelector(".hero-title");
+    const heroSub = document.querySelector(".hero-sub");
+    const heroLink = document.querySelector(".hero-link");
+    const tabs = document.querySelectorAll(".hero-tab");
+    
+    function updateSlide(i) {
+      const slide = slides[i];
+    
+      heroBg.style.opacity = 0; 
+    
+      setTimeout(() => {
+        heroBg.src = slide.bg;  
+        heroTitle.textContent = slide.title;
+        heroSub.textContent = slide.subtitle;
+        heroBg.style.opacity = 1;
+      }, 500);
+    
+      tabs.forEach((tab, index) => {
+        if (index === i) {
+          tab.classList.remove("border-white/30");
+          tab.classList.add("border-orange-300");
+        } else {
+          tab.classList.add("border-white/30");
+          tab.classList.remove("border-orange-300");
+        }
+      });
+    }
+    
+    document.querySelector(".scroll-right").onclick = () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlide(currentIndex);
+    };
+    
+    document.querySelector(".scroll-left").onclick = () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlide(currentIndex);
+    };
+    
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlide(currentIndex);
+    }, 5000);
+    
+    </script>
+    
+    
+    <!-- search qury -->
+    <script>
+    const cards = [
+      {
+        name: "A Mother's Love",
+        image: "public/herobg.jpg",
+        keywords: ["Mother", "Love", "omotola"]
+      },
+      {
+        name: "Road Rogue",
+        image: "public/Road Rogue.jpg",
+        keywords: ["road", "rogue" , "action"]
+      },
+      {
+        name: "Rattle Snake",
+        image: "public/film3.png",
+        keywords: ["snake", "rattle" , "action"]
+      },
+      {
+        name: "Alter Ego",
+        image: "public/film4.png",
+        keywords: ["alter", "Ego" , "omotola"]
+      },
+      {
+        name: "Blood Sister",
+        image: "public/film5.png",
+        keywords: ["sister", "blood" , "omotola"]
+      },
+      {
+        name: "Ije: The Journey",
+        image: "public/film6.png",
+        keywords: ["Ije", "journey" , "love"]
+      },
+      {
+        name: "Last Flight to Abuja",
+        image: "public/film7.png",
+        keywords: ["omotola", "last" , "flight"]
+      },
+      {
+        name: "The Ties That Binds ",
+        image: "public/film8.png",
+        keywords: ["Ties", "Binds" , "omotola"]
+      },
+      {
+        name: "Amina",
+        image: "public/amina.jpg",
+        keywords: ["Amina", "self-discovery" , "omotola"]
+      },
+      {
+        name: "The Tribunal",
+        image: "public/The-Tribunal-600x750.webp",
+        keywords: ["Tribunal", "law" , "omotola"]
+      },
+      {
+        name: "Shadow Parties",
+        image: "public/shadowparty.jpg",
+        keywords: ["shadow", "action" , "omotola"]
+      },
+    
+    ];
+    
+    const input = document.getElementById("searchInput");
+    const grid = document.getElementById("cardGrid");
+    
+    function filterCards(query) {
+      if (!query) return cards;
+    
+      const q = query.toLowerCase();
+      return cards
+        .filter(card =>
+          card.name.toLowerCase().includes(q) ||
+          card.keywords.some(k => k.toLowerCase().includes(q))
+        )
+        .slice(0, 8);
+    }
+    
+    function renderCards(list) {
+      grid.innerHTML = "";
+    
+      list.forEach(card => {
+        const el = document.createElement("div");
+        el.className =
+          "transition overflow-hidden";
+    
+        el.innerHTML = `
+          <img
+            src="${card.image}"
+            alt="${card.name}"
+            class="w-full h-[200px] md:h-[300px] object-cover rounded"
+          />
+          <div class="mt-2 text-left font-semibold text-white text-poppins text-lg">
+            ${card.name}
+          </div>
+        `;
+    
+        grid.appendChild(el);
+      });
+    }
+    
+    renderCards(cards);
+    
+    input.addEventListener("input", e => {
+      renderCards(filterCards(e.target.value.trim()));
+    });
+    </script>
+    
+    <!-- desktop other dropdown click -->
+    <script>
+      const btn = document.getElementById('othersBtn');
+      const dropdown = document.getElementById('othersDropdown');
+    
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropdown.classList.toggle('opacity-0');
+        dropdown.classList.toggle('invisible');
+      });
+    
+      document.addEventListener('click', (e) => {
+        if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+          dropdown.classList.add('opacity-0', 'invisible');
+        }
+      });
+    </script>
+    
+    <!-- mobile view accordion -->
+    <script>
+      const toggle = document.getElementById('othersToggle');
+      const accordion = document.getElementById('othersAccordion');
+      const icon = document.getElementById('othersIcon');
+    
+      toggle.addEventListener('click', () => {
+        const isOpen = accordion.style.maxHeight;
+    
+        if (isOpen) {
+          accordion.style.maxHeight = null;
+          icon.classList.remove('rotate-180');
+        } else {
+          accordion.style.maxHeight = accordion.scrollHeight + 'px';
+          icon.classList.add('rotate-180');
+        }
+      });
+    </script>
+    
+    <script>
+      const modal = document.getElementById("exitModal");
+    
+      function openModal() {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.body.style.overflow = "hidden";
+      }
+    
+      function closeModal() {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        document.body.style.overflow = "";
+      }
+    
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+      });
+    </script>
 </body>
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const navbar = document.getElementById('navbar');
-
-  let open = false;
-
-  menuBtn.addEventListener('click', () => {
-    open = !open;
-
-    if (open) {
-      navbar.style.maxHeight = '480px';
-    } else {
-      navbar.style.maxHeight = '95px'; 
-    }
-    menuBtn.innerHTML = open
-        ? '<i class="fa-solid fa-xmark"></i>'
-        : '<i class="fa-solid fa-bars"></i>';
-  });
-
-</script>
-
-<script>
-document.querySelectorAll(".scroll-section").forEach(section => {
-
-    const container = section.querySelector(".scroll-container");
-    const leftBtn = section.querySelector(".scroll-left");
-    const rightBtn = section.querySelector(".scroll-right");
-
-    leftBtn.addEventListener("click", () => {
-        container.scrollBy({ left: -350, behavior: "smooth" });
-    });
-
-    rightBtn.addEventListener("click", () => {
-        container.scrollBy({ left: 350, behavior: "smooth" });
-    });
-
-});
-</script>
-
-<!-- Hero slider -->
-<script>
-    const slides = [
-  {
-    bg: "public/herobg.png",
-    title: "A MOTHER’S LOVE",
-    subtitle: "Now Available Only in Theaters",
-    href: "moviedetails.html"
-  },
-  {
-    bg: "public/rr.png",
-    title: "RR The Movie",
-    subtitle: "Coming To Theatres Soon",
-  },
-  {
-    bg: "public/rs.png",
-    title: "Rattle Snake",
-    subtitle: "The Entertainment Fair",
-  },
-  {
-    bg: "public/lastflight.png",
-    title: "Last Flight To Abuja",
-    subtitle: "Coming To Theatres Soon",
-  }
-];
-
-let currentIndex = 0;
-
-const heroBg = document.querySelector(".hero-bg");
-const heroTitle = document.querySelector(".hero-title");
-const heroSub = document.querySelector(".hero-sub");
-const heroLink = document.querySelector(".hero-link");
-const tabs = document.querySelectorAll(".hero-tab");
-
-function updateSlide(i) {
-  const slide = slides[i];
-
-  heroBg.style.opacity = 0; 
-
-  setTimeout(() => {
-    heroBg.src = slide.bg;  
-    heroTitle.textContent = slide.title;
-    heroSub.textContent = slide.subtitle;
-    heroBg.style.opacity = 1;
-  }, 500);
-
-  tabs.forEach((tab, index) => {
-    if (index === i) {
-      tab.classList.remove("border-white/30");
-      tab.classList.add("border-orange-300");
-    } else {
-      tab.classList.add("border-white/30");
-      tab.classList.remove("border-orange-300");
-    }
-  });
-}
-
-document.querySelector(".scroll-right").onclick = () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateSlide(currentIndex);
-};
-
-document.querySelector(".scroll-left").onclick = () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateSlide(currentIndex);
-};
-
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateSlide(currentIndex);
-}, 5000);
-
-</script>
-
-
-<!-- search qury -->
-<script>
-const cards = [
-  {
-    name: "A Mother's Love",
-    image: "public/herobg.jpg",
-    keywords: ["Mother", "Love", "omotola"]
-  },
-  {
-    name: "Road Rogue",
-    image: "public/road rogue.jpg",
-    keywords: ["road", "rogue" , "action"]
-  },
-  {
-    name: "Rattle Snake",
-    image: "public/film3.png",
-    keywords: ["snake", "rattle" , "action"]
-  },
-  {
-    name: "Alter Ego",
-    image: "public/film4.png",
-    keywords: ["alter", "Ego" , "omotola"]
-  },
-  {
-    name: "Blood Sister",
-    image: "public/film5.png",
-    keywords: ["sister", "blood" , "omotola"]
-  },
-  {
-    name: "Ije: The Journey",
-    image: "public/film6.png",
-    keywords: ["Ije", "journey" , "love"]
-  },
-  {
-    name: "Last Flight to Abuja",
-    image: "public/film7.png",
-    keywords: ["omotola", "last" , "flight"]
-  },
-  {
-    name: "The Ties That Binds ",
-    image: "public/film8.png",
-    keywords: ["Ties", "Binds" , "omotola"]
-  },
-  {
-    name: "Amina",
-    image: "public/amina.jpg",
-    keywords: ["Amina", "self-discovery" , "omotola"]
-  },
-  {
-    name: "The Tribunal",
-    image: "public/The-Tribunal-600x750.webp",
-    keywords: ["Tribunal", "law" , "omotola"]
-  },
-  {
-    name: "Shadow Parties",
-    image: "public/shadowparty.jpg",
-    keywords: ["shadow", "action" , "omotola"]
-  },
-
-];
-
-const input = document.getElementById("searchInput");
-const grid = document.getElementById("cardGrid");
-
-function filterCards(query) {
-  if (!query) return cards;
-
-  const q = query.toLowerCase();
-  return cards
-    .filter(card =>
-      card.name.toLowerCase().includes(q) ||
-      card.keywords.some(k => k.toLowerCase().includes(q))
-    )
-    .slice(0, 8);
-}
-
-function renderCards(list) {
-  grid.innerHTML = "";
-
-  list.forEach(card => {
-    const el = document.createElement("div");
-    el.className =
-      "transition overflow-hidden";
-
-    el.innerHTML = `
-      <img
-        src="${card.image}"
-        alt="${card.name}"
-        class="w-full h-[200px] md:h-[300px] object-cover rounded"
-      />
-      <div class="mt-2 text-left font-semibold text-white text-poppins text-lg">
-        ${card.name}
-      </div>
-    `;
-
-    grid.appendChild(el);
-  });
-}
-
-renderCards(cards);
-
-input.addEventListener("input", e => {
-  renderCards(filterCards(e.target.value.trim()));
-});
-</script>
-
-<!-- desktop other dropdown click -->
-<script>
-  const btn = document.getElementById('othersBtn');
-  const dropdown = document.getElementById('othersDropdown');
-
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    dropdown.classList.toggle('opacity-0');
-    dropdown.classList.toggle('invisible');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
-      dropdown.classList.add('opacity-0', 'invisible');
-    }
-  });
-</script>
-
-<!-- mobile view accordion -->
-<script>
-  const toggle = document.getElementById('othersToggle');
-  const accordion = document.getElementById('othersAccordion');
-  const icon = document.getElementById('othersIcon');
-
-  toggle.addEventListener('click', () => {
-    const isOpen = accordion.style.maxHeight;
-
-    if (isOpen) {
-      accordion.style.maxHeight = null;
-      icon.classList.remove('rotate-180');
-    } else {
-      accordion.style.maxHeight = accordion.scrollHeight + 'px';
-      icon.classList.add('rotate-180');
-    }
-  });
-</script>
-
-<script>
-  const modal = document.getElementById("exitModal");
-
-  function openModal() {
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-    document.body.style.overflow = "hidden";
-  }
-
-  function closeModal() {
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
-    document.body.style.overflow = "";
-  }
-
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal();
-  });
-</script>
 </html>
