@@ -13,13 +13,12 @@
         id="navbar"
         class="bg-zinc-900/90 backdrop-blur-md rounded-lg
             outline outline-1 outline-orange-300/10
-            transition-[max-height] duration-500 ease-in-out overflow-hidden md:overflow-visible"
-        style="max-height: 95px"
+            transition-[max-height] duration-500 ease-in-out overflow-hidden md:overflow-visible max-h-[70px] md:max-h-[95px]"
     >
 
         <div class="flex justify-between items-center px-4 ">
             <a href="index.html">
-                <img src="/public/img124.png" class="w-16" />
+                <img src="/public/img124.webp" class="w-12 md:w-16" />
             </a>
 
             <button id="menuBtn" class="md:hidden text-white text-2xl">
@@ -174,7 +173,7 @@
     if (open) {
       navbar.style.maxHeight = '480px';
     } else {
-      navbar.style.maxHeight = '95px'; 
+      navbar.style.maxHeight = '70px'; 
     }
     menuBtn.innerHTML = open
         ? '<i class="fa-solid fa-xmark"></i>'
@@ -205,23 +204,23 @@ document.querySelectorAll(".scroll-section").forEach(section => {
 <script>
     const slides = [
   {
-    bg: "public/herobg.png",
+    bg: "public/herobg.webp",
     title: "A MOTHER’S LOVE",
     subtitle: "Now Available Only in Theaters",
     href: "moviedetails.html"
   },
   {
-    bg: "public/rr.png",
+    bg: "public/rr.webp",
     title: "RR The Movie",
     subtitle: "Coming To Theatres Soon",
   },
   {
-    bg: "public/rs.png",
+    bg: "public/rs.webp",
     title: "Rattle Snake",
     subtitle: "The Entertainment Fair",
   },
   {
-    bg: "public/lastflight.png",
+    bg: "public/lastflight.webp",
     title: "Last Flight To Abuja",
     subtitle: "Coming To Theatres Soon",
   }
